@@ -1,0 +1,27 @@
+.pcn-qna-short-list-item {
+    padding-bottom: 8px;
+}
+.pcn-qna-short-list-item span.stat {
+    font-size: 0.85em;
+    line-height: 15px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 3px;
+}
+.pcn-qna-short-list-item.answered span.stat {
+    background-color: #c1e2b3;
+}
+.pcn-qna-short-list-item .label-danger {
+    font-size: 0.7em;
+    padding: 1px 3px 2px 3px;
+}
+
+.pcn-qna-short-list.external {
+    border: solid 1px #D6D5DA;
+    background: #fafafa;
+    padding: 0 10px 5px 10px;
+    /* margin-bottom: 15px; */
+    border-radius: 7px;
+}

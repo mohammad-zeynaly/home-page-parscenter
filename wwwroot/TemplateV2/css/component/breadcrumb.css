@@ -1,0 +1,61 @@
+nav[aria-label="breadcrumb"] {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.breadcrumb{
+	row-gap: 1rem;
+	width: max-content;
+}
+
+.breadcrumb-item {
+	gap: 0.3rem;
+}
+
+.breadcrumb-item:last-child>span {
+	display: none;
+}
+
+.breadcrumb-item a {
+	position: relative;
+}
+
+.breadcrumb-item a::before {
+	position: absolute;
+	content: "";
+	bottom: -10px;
+	left: 0;
+	border-radius: 7px;
+	width: 100%;
+	height: 0.15rem;
+	background: currentColor;
+	transform: scaleX(0);
+	transition: .3s
+}
+
+.breadcrumb-item a:hover::before {
+	transform: scaleX(1)
+}
+
+.breadcrumb-item:not(:first-child) {
+	margin-inline-start: 0.3rem;
+	position: relative;
+}
+
+/*.breadcrumb-item:not(:first-child)::after {
+	content: "";
+	height: 24px;
+	position: absolute;
+	width: 24px;
+	background: url(img/chevron_left.svg) left top no-repeat;
+	right: -15px;
+}*/
+
+.breadcrumb-item:not(:last-child) a {
+	color: var(--color-icon-neutral-hint);
+}
+
+.breadcrumb-item:last-child a {
+	color: var(--color-primary-500);
+}

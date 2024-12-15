@@ -1,0 +1,142 @@
+﻿body {
+    font-size: 14px;
+}
+
+body, .tooltip {
+    font-family: Vazirmatn;
+}
+
+.input-validation-error { border-color: #c00; }
+
+.table-nowrap td {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-nowrap td.nowrap-sm {
+    max-width: 100px;
+}
+.table-nowrap td.nowrap-md {
+    max-width: 150px;
+}
+.table-nowrap td.nowrap-lg {
+    max-width: 250px;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+body {
+  padding-top: 60px;
+}
+
+.footer { padding-top: 40px; padding-bottom: 40px; margin-top: 40px; border-top: 1px solid #eee; text-align: center; }
+
+.company-status-active .badge { background-color: green; }
+.company-status-editingrequired .badge { background-color: red; }
+.company-status-approvalpennding .badge { background-color: #fc0; }
+
+.paid-badge { font-size: 1.2em;color: gold; }
+.pull-side { float: right !important; }
+
+.tooltip-inner { max-width: 400px; white-space:pre-wrap; }
+
+.change-set-update { background-color: #F0F8FF; padding-bottom: 2px; border-radius: 3px; }
+.change-set-create { background-color: #EFFAE4; padding-bottom: 2px; border-radius: 3px; }
+.change-set-remove { background-color: #FFDFDF; padding-bottom: 2px; border-radius: 3px; }
+
+.company-admin-link { width: 400px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; }
+
+.info-box {
+    border: solid 1px #cfcfcf;
+    background: #eee;
+    padding: 15px;
+    margin: 20px 0;
+}
+.info-box-row { border-bottom: dotted 1px #ccc;padding-bottom: 10px; }
+
+.txt-note, .txt-note:focus { 
+    background:url(img/note.png) repeat-x top;
+    line-height: 21px;
+}
+
+.text-gold {
+    color: goldenrod;
+}
+
+.admin-comments { height: 210px; }
+.admin-comments h4 {
+    padding-bottom: 10px;
+    margin: 20px 0 15px 0;
+    border-bottom: solid 1px #eee;
+}
+.admin-comment-list {
+    overflow: auto;
+    height: 140px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    line-height: 20px;
+}
+.admin-comment-list-inner {
+    padding: 7px 10px;
+    min-height: 138px;
+    background:url(img/note.png) repeat left top;
+}
+.admin-comment-name { font-weight: bold; }
+.admin-comment-date{ font-style: italic;font-size: 0.85em;color: #555;display: inline-block; }
+.admin-comment-form textarea { height: 100px;margin-bottom: 5px; }
+
+.text-big { font-size: 1.2em; }
+.text-bigger{ font-size: 1.4em;}
+
+.pagination-text {
+    margin: 20px 0;
+}
+
+.popup-block {
+    background-color: #fff;
+    padding: 20px 30px;
+    max-width: 700px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.popup-block-wide {
+    max-width: 900px;
+}
+
+.product-attribute-mappings li {
+    padding: 5px;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+}
+.product-attribute-mappings .glyphicon {
+    font-size: 1.2em;
+    margin: 0 4px;
+}
+
+.product-attribute-list .glyphicon { font-size: 1.1em; margin: 0 4px; }
+
+.product-attribute-mappings .tooltip-inner {
+    white-space: nowrap;
+    text-align: left;
+}
+.drag-handle {
+    cursor: move;
+}
+
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.textboxlist-bs .glyphicon-plus {
+    font-size: 1.5em;
+}
+
+.mfp-iframe-error iframe {
+    height: 500px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .pagination-numbers, .pagination-text { text-align: center !important; }
+}

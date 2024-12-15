@@ -1,0 +1,13 @@
+﻿
+h1, h2, h3, h4, h5, th, .navbar, legend, .info-box-account strong { font-family: Vazirmatn; }
+
+.navbar-right { float: left !important; }
+.navbar-left { float: right !important; }
+
+.text-side { text-align: left; }
+
+.pull-side { float: left !important; }
+
+.nav-justified > li { float: none; }
+
+.form-group-sm .control-label { font-size: 0.9em; }

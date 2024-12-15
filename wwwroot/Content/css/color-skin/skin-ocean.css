@@ -1,0 +1,6 @@
+
+:root {
+	--primary: #3876BF;
+	--primary-dark: #2b64a7;
+	--filter: invert(39%) sepia(96%) saturate(433%) hue-rotate(172deg) brightness(90%) contrast(85%);
+}

@@ -1,0 +1,129 @@
+/* ----- Simple Style for now ----- */
+a { text-decoration:none; color: #aaa; }
+a:hover { text-decoration: underline; }
+
+h3 {
+    color: #CB0101;
+    clear: both;
+    padding: 30px 0 0 15px;
+    font: bold 18px Arial;
+}
+
+body {
+    background: #343434 url(img/dash_tile.png) repeat-x 0 93px;
+    color: #565656;
+}
+.container {
+    background: #181818;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+#content {
+    padding: 10px;
+}
+#footerwrapper {
+    font-size: 0.9em;
+    clear: both;
+    line-height: 20px;
+}
+#footer {
+    margin: 0 auto;   
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: solid 1px #333;  
+}
+
+/* ----- Header ----- */
+#header {
+    height: 120px;
+}
+#intro span {
+    display: none;
+}
+#intro a {
+    float: left;
+    display: block;
+    width: 280px;
+    height: 80px;
+    background: url(img/dash_logo.png) no-repeat 10px 15px;
+}
+#intro h1 {
+    margin: 0;
+}
+#intro h2 {
+    float: right;
+    width: 290px;
+    height: 63px;
+    background: url(img/dash_logo.png) no-repeat right -65px;
+    margin: 30px 30px 0;
+}
+
+#menu { background: url(img/dash_tile.png) repeat-x top; }
+#menu a {display: block; color: #fff; font-weight: bold; padding: 6px 15px 5px 15px; }
+
+/* ----- Company Boxes ----- */
+.company {
+    padding: 5px;
+}
+.company-inner {
+    padding: 8px;
+    border: solid 1px #333;
+    background: url(img/dash_box.png) repeat-x top;
+}
+.company .user-image {
+    float: left;
+    background-color: #aaa;
+    text-align: center;
+    padding: 2px;   
+    margin-right: 10px; 
+}
+.company a {
+    font-weight: normal;
+}
+.company ul {
+    margin-left: 115px;
+}
+.company li {
+    padding-bottom: 4px;
+}
+.company li.type {
+    font-size: 0.9em;
+}
+.company li.location {
+    padding-left: 20px;
+    background: url(img/marker_gray.png) no-repeat left top;    
+}
+.company li.phone {
+    padding-left: 20px;
+    background: url(img/phone_gray.png) no-repeat left top;    
+}
+
+/* ----- Product Boxes ----- */
+.product {
+    padding: 5px;
+}
+.product-inner {
+    padding: 8px;
+    border: solid 1px #333;
+    background: #1f1f1f url(img/dash_box.png) repeat-x bottom;
+}
+.product .user-image {
+    background-color: #aaa;
+    text-align: center;
+    padding: 2px;   
+    margin-bottom: 7px;
+    display: block;
+}
+.product a {
+    font-weight: normal;
+}
+.product li {
+    padding-bottom: 4px;
+}
+.product li.type {
+    font-size: 0.9em;
+}
+.product li.phone {
+    padding-left: 20px;
+    background: url(img/phone_gray.png) no-repeat left top;    
+}

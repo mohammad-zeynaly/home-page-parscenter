@@ -1,0 +1,198 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="wwwroot/TemplateV2/css/img/fa/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="wwwroot/TemplateV2/css/img/fa/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="wwwroot/TemplateV2/css/img/fa/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="wwwroot/TemplateV2/css/img/fa/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="wwwroot/TemplateV2/css/img/fa/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" href="wwwroot/TemplateV2/css/img/fa/apple-touch-icon-144.png">
+
+    <title>تولید کننده ها، وارد کننده ها، تامین کننده ها و فروش...</title>
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/typeface-material.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/typeface.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/variables/colorVariables.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/variables/sizeVariables.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/variables/typographyVariables.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/common.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/buttons.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/inputs.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/modal-dialog.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/notifications/notifications.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/base-v2.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/base-v2-fa.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/base-v2-rtl.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/custom-utilities.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/bootstrap/bootstrap-grid.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/bootstrap/bootstrap-grid-rtl.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/dropdown.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/drawer.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/slider/glide.core.min.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/landing.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/page/main-landing.css">
+
+    <link rel="stylesheet" href="wwwroot/TemplateV2/css/component/landing-footer.css">
+
+    <script>function docReady(fn) { if (document.readyState === "complete" || document.readyState === "interactive") { setTimeout(fn, 1); } else { document.addEventListener("DOMContentLoaded", fn); } }</script>
+    <style>
+        @keyframes glowing {
+            0% {
+                box-shadow: 0 0 7px 1px #ff0000bf
+            }
+
+            50% {
+                box-shadow: 0 0 0 0 #ff0000bf
+            }
+
+            100% {
+                box-shadow: 0 0 7px 1px #ff0000bf
+            }
+        }
+
+        .drawer-content .ifb,
+        .navbar-nav .ifb {
+            position: relative
+        }
+
+        .drawer-content .ifb::after,
+        .navbar-nav .ifb::after {
+            content: "";
+            height: 5px;
+            width: 5px;
+            background-color: var(--color-primary-500);
+            border-radius: 7px;
+            top: 8px;
+            left: 0;
+            position: absolute;
+            animation: glowing 2s infinite
+        }
+
+        .drawer-content .ifb::after {
+            top: 0;
+            left: -15px
+        }
+
+        @media screen and (max-width:768px) {
+            .navbar-nav .ifb::after {
+                left: unset
+            }
+        }
+    </style>
+</head>
+</head>
+
+<body>
+
+    <p class=""> 
+        salam
+    </p>
+
+    <script src="wwwroot/TemplateV2/js/jquery/jquery-3.7.1.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/notifications/notifications.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/layouts/baseLayout.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/jquery/jquery.validate.unobtrusive.ajax.min.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/utils.js"></script>
+
+    <script src="wwwroot/Scripts/version-controller.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/component/dropdown.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/slider/glide.min.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/component/drawer.js"></script>
+
+    <script src="wwwroot/Scripts/Libraries/jquery.jcarousellite.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/layouts/landingLayout.js"></script>
+
+    <script src="wwwroot/TemplateV2/js/page/main-landing.js"></script>
+
+    <script>
+        $(function () {
+
+            const loading = $("[data-modal-loading-parent]")[0];
+
+            $("[data-modal-dialog-parent]").click(function (e) {
+                e.preventDefault();
+                const modalDialogParent = $($(this).data("modal-dialog-parent"))[0];
+                $(modalDialogParent).addClass("modal-dialog-show");
+                $("body").css("overflow", "hidden");
+            });
+
+            $(".modal-dialog-overlay").click(function (e) {
+                closeModal($(this).parent());
+            });
+
+            $(".modal-dialog-close").click(function (e) {
+                closeModal($(this).parent().parent());
+            });
+
+            const closeModal = (modalDialogParent) => {
+                $(".modal-dialog-parent").removeClass("modal-dialog-show");
+                $("body").css("overflow", "auto");
+                setTimeout(() => {
+                    const modalId = $(modalDialogParent).attr("id");
+                    const isShowLoading = $(modalDialogParent).data("show-loading");
+                    if (isShowLoading.toLowerCase() === "true") {
+                        $(`#panel-${modalId}`).html(loading);
+                    }
+                }, "500");
+            }
+
+            failureRequestModal = function (xhr) { $(".modal-dialog-parent").removeClass("modal-dialog-show"); $("body").css("overflow", "auto"); ShowMessage('خطا', 'پیغام خطا', 'error'); };
+        });
+        if (typeof javascriptFileLoaded === "undefined") {
+            const css = `
+                                        img {
+                                            max-width: 100%;
+                                        }
+        
+                                        body {
+                                            font-size: 1.3rem;
+                                        }
+        
+                                        *{
+                                            margin: 18px 2px !important;
+                                            height:auto !important;
+                                        }
+        
+                                        .navbar-toggle, div[style] {
+                                            display: block !important;
+                                        }
+                                    `, head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style'); head.prepend(style); style.type = 'text/css'; if (style.styleSheet) { style.styleSheet.cssText = css; } else { style.appendChild(document.createTextNode(css)); }
+        }
+    </script>
+</body>
+
+</html>

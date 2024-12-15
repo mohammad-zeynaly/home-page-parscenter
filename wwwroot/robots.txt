@@ -1,0 +1,8 @@
+user-agent: *
+disallow: /Account
+disallow: /Manage
+disallow: /at/*
+disallow: /Tracking
+Allow: *
+
+Sitemap: https://parscenter.com/sitemaps/Sitemap-index-fa.xml

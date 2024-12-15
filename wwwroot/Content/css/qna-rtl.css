@@ -1,0 +1,11 @@
+﻿.trumbowyg-button-pane, .trumbowyg-modal-box {
+	direction: ltr;
+}
+.trumbowyg-editor {
+    direction: rtl !important;
+}
+
+.pcn-qna-sidebar {
+    padding-left: 0;
+    padding-right: 30px;
+}

@@ -1,0 +1,210 @@
+/* ============ local variables  ============ */
+:root {
+	--primary-color: #20315f;
+	--primary-color-dark: #162349;
+	--secondary-color: #f45050;
+}
+/* ============ css reset  ============ */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: IRANYekan;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+	color: var(--color-neutral-800);
+}
+button {
+  all: unset;
+}
+
+/* ============ components  ============ */
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.relative {
+  position: relative;
+}
+
+/* ============ section header  ============  */
+.header-shape__icon {
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  left: 0;
+  z-index: -1;
+}
+.header-shape__arrow {
+  position: absolute;
+  top: -3rem;
+  transform: rotate(-60deg);
+  left: 7rem;
+}
+.header {
+  padding: 1.5rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: all 175ms ease-in;
+  z-index: 50;
+}
+.header__fixed {
+  background-color: var(--color-white);
+  padding: 1rem 0;
+}
+.menu__item {
+  margin-left: 3rem;
+}
+.brand__link {
+  margin-left: 3rem;
+}
+.menu__link {
+  color: var(--primary-color);
+  transition: all 175ms ease-in;
+}
+.menu__link:hover {
+  color: var(--secondary-color);
+}
+.login__btn {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  font-weight: 100;
+}
+.btn-dropdown {
+	background-color: var(--primary-color);
+	color: var(--color-white);
+	font-weight: 100;
+	border: none;
+	padding: 0.8rem 1.2rem;
+	border-radius: 7px;
+}
+.btn-dropdown:hover {
+	background-color: var(--primary-color-dark);
+	color: var(--color-white);
+}
+
+/*  ============  section error-section  (content and image)  ============ */
+.error-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.error-section__banner {
+  width: 30%;
+  margin: 0 auto;
+}
+.error-section__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.error-section-content {
+  /* padding-top: 0.5rem; */
+}
+.error-section-content__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.error-section-content__caption {
+  padding: 1.2rem 0 2.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.error-section-content__link {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+/*  ============ responsive  ============ */
+@media only screen and (max-width: 1200px) {
+  /*  ============ error-section section  ============ */
+  .error-section-content__title {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* ============ responsive header section  ============ */
+  .menu__item {
+    margin-left: 2rem;
+  }
+  /*  ============ page error-section  ============ */
+  .error-section__banner {
+    width: 50%;
+  }
+  .error-section-content__title {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* ============ responsive header  section  ============ */
+  .header__fixed {
+    padding: 0.7rem 0;
+  }
+  .nav {
+    flex-direction: row-reverse;
+    align-items: center !important;
+  }
+  .login__btn,
+  .menu {
+    display: none !important;
+  }
+  .menu__btn {
+    display: flex !important;
+    align-items: center;
+    cursor: pointer;
+    height: 1.5rem;
+  }
+  .menu__btn svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .brand__link {
+    margin: 0;
+  }
+  .brand__logo {
+    width: 8.5rem;
+    transform: translateY(5px);
+  }
+  /*  ============ page error-section  ============ */
+  .error-section {
+    padding-top: 3.5rem;
+  }
+  .error-section-content__title {
+    font-size: 1.2rem;
+  }
+  .error-section-content__caption {
+    padding: 1.2rem 0 2.2rem 0;
+    font-size: 1rem;
+  }
+  .error-section__banner {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /*  ============ page error-section  ============ */
+  .error-section__banner {
+    width: 90%;
+  }
+  .error-section-content {
+    text-align: center;
+  }
+  .error-section-content__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* ============ responsive btn component  ============ */
+  .btn-lg {
+    padding: 0.8rem 1.1rem !important;
+  }
+}

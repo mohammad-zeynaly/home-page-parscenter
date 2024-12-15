@@ -1,0 +1,30 @@
+﻿#intro a { background-image: url(img/fa/dash_logo.png); }
+#intro h2 { background-image: url(img/fa/dash_logo.png); }
+
+h3 { padding: 30px 15px 0 0; }
+
+.company ul {
+    margin-right: 115px;
+    margin-left: 0;
+}
+.company .user-image {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.company li.location {
+    padding-right: 20px;
+    padding-left: 0;
+    background-position: right top;    
+}
+.company li.phone {
+    padding-right: 20px;
+    padding-left: 0;
+    background-position: right top;    
+}
+
+.product li.phone {
+    padding-right: 20px;
+    padding-left: 0;
+    background-position: right top;    
+}

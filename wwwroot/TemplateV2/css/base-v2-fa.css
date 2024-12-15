@@ -1,0 +1,8 @@
+body, input, button, select, .tooltip {
+    font-family: IRANYekan,sans-serif;
+}
+
+h1, h2, h3, h4, h5, legend, .nav-search label, .nav-tabs li a, .business-owner-ref, .footer a, .group-item-title {
+    font-family: IRANYekan !important;
+    font-weight: normal;
+}

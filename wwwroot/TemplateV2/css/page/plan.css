@@ -1,0 +1,636 @@
+.text-center {
+    text-align: center;
+}
+
+.plan-section-title {
+    position: relative;
+}
+
+.plan-section-title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 88px;
+    height: 2px;
+    margin: 11px auto;
+    background-color: var(--color-primary-500);
+}
+
+/* #region plan page header */
+
+.plans-page-header {
+    row-gap: 50px;
+    position: relative;
+    min-height: 1423px;
+}
+
+.plans-page-header::before {
+    content: "";
+    background: url("img/plan-header-mobile.svg") no-repeat top center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.plans-page-header-display {
+    row-gap: 13px;
+    margin-top: 270px;
+}
+
+.plans-page-header-title>p {
+    display: contents;
+}
+
+.overtaking-text {
+    position: relative;
+}
+
+.overtaking-text::before {
+    content: "";
+    background: url("img/plan-takeover.svg") no-repeat right;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 21px;
+}
+
+/* #region plans page header plans */
+
+.plans-page-header-plans {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    row-gap: 15px;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.plan-card {
+    border: 2px solid var(--color-anchor-200);
+    border-radius: 7px;
+    padding: 1rem;
+    background: var(--color-white);
+    transition: border-color 100ms;
+}
+
+.plan-color-FREE {
+    color: var(--color-dark-neutral-600);
+}
+
+.plan-color-GOLD {
+    color: #e69900;
+}
+
+.plan-color-DIAMOND {
+    color: #77b3ec;
+}
+
+.plan-card:hover {
+    border-color: var(--color-neutral-200);
+}
+
+.plan-card-divider {
+    width: 3px;
+    height: 100%;
+    border-bottom: 2px dashed var(--color-anchor-200);
+    border-radius: 7px;
+}
+
+.plan-card-content {
+    row-gap: 15px;
+}
+
+.plan-card-property {
+    column-gap: 10px;
+}
+
+.plan-card-action {
+    margin-top: 30px;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region plan description */
+
+.plan-description {
+    margin-top: 70px;
+    background-color: var(--color-anchor-100);
+}
+
+.plan-description-container {
+    padding: 40px;
+}
+
+.plan-description-detail {
+    flex: 1;
+}
+
+.plan-description-detail-title>h5::after {
+    margin: 11px 0;
+}
+
+.plan-description-items .plan-description-item:nth-child(2) .plan-description-detail-title>h5::after {
+    background-color: #00a7ae;
+}
+
+.free-features,
+.view-features {
+    margin: 10px 0;
+}
+
+.free-features>li {
+    position: relative;
+    padding-right: 20px;
+}
+
+.free-features>li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--color-primary-500);
+    margin: auto;
+}
+
+.view-features>li {
+    position: relative;
+    padding-right: 20px;
+}
+
+.view-features>li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #00a7ae;
+    margin: auto;
+}
+
+.plan-description-img {
+    flex: 1;
+    display: flex;
+}
+
+.plan-description-item:first-child .plan-description-img {
+    transform: translate(-20px, 15px);
+}
+
+.plan-description-item:last-child .plan-description-img {
+    transform: translate(30px, -7px);
+}
+
+.plan-description-img>img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    max-width: 330px;
+    min-width: 230px;
+}
+
+/* #endregion */
+
+/* #region plan comparison */
+
+.plan-comparison {
+    margin-top: 115px;
+}
+
+.plan-comparison-title>h5::before {
+    content: "";
+    background-image: url("img/plan-targe.svg");
+    position: absolute;
+    right: -80px;
+    top: -60px;
+    width: 60px;
+    height: 73px;
+}
+
+.plan-comparison-title>h5::after {
+    margin: 11px 0;
+}
+
+.plan-comparison-content {
+    margin-top: 3rem;
+}
+
+.plan-comparison-table {
+    max-width: 95%;
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.plan-comparison-table thead {
+    border-bottom: 40px solid transparent;
+}
+
+.plan-comparison-table tr {
+    border-bottom: 1px solid var(--color-anchor-200);
+}
+
+.plan-comparison-table tbody tr td:first-child {
+    padding: 5px;
+    text-align: start;
+    width: 10rem;
+    padding-block: 1rem;
+}
+
+.plan-comparison-table tbody tr td:not(:first-child) {
+    padding: 8px;
+    text-align: center;
+}
+
+.th-mobile {
+    rotate: -50deg;
+}
+
+/* #endregion */
+
+/* #region media query (max)*/
+
+@media (max-width: 575px) {}
+
+@media (max-width: 767px) {
+
+    .plan-card {
+        display: grid;
+        grid-template-areas:
+            "h h h h d c c c c c c c"
+            "- - - - d c c c c c c c"
+            "a a a a d c c c c c c c"
+        ;
+        column-gap: 10px;
+    }
+
+    .plan-card-container {
+        display: contents;
+    }
+
+    .plan-card-header {
+        grid-area: h;
+    }
+
+    .plan-card-divider {
+        grid-area: d;
+    }
+
+    .plan-card-action {
+        grid-area: a;
+        min-width: 117px;
+    }
+
+    .plan-card-content {
+        grid-area: c;
+    }
+
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 1199px) {}
+
+/* #endregion*/
+
+/* #region media query (min)*/
+
+@media (min-width: 450px) {
+
+    /* #region plan description */
+
+    .plan-description-item:first-child .plan-description-img {
+        transform: translate(-30px, 24px);
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 576px) {
+
+    /* #region plan description */
+
+    .plan-description-item:last-child .plan-description-img {
+        transform: translate(55px, -25px);
+    }
+
+    /* #endregion */
+
+    .plan-comparison-table-header::before {
+         /* content: " "; */
+         width: 100%;
+         background-color: white;
+         height: 110px;
+         position: absolute;
+    }
+}
+
+@media (min-width: 331px) {
+
+    /* #region plans page header */
+
+    .plans-page-header-display {
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 460px) {
+
+    /* #region plans page header */
+
+    .plans-page-header-display {
+        padding-left: 35%;
+        padding-right: 10%;
+    }
+
+    /* #endregion */
+
+}
+
+@media (min-width: 768px) {
+
+    /* #region plans page header */
+
+    .plans-page-header {
+        min-height: auto;
+    }
+
+    .plans-page-header::before {
+        background: url("img/plan-header-1366.svg") no-repeat;
+        height: 430px;
+        background-size: cover;
+        z-index: -1;
+        bottom: 115px;
+        top: auto;
+    }
+
+    .plans-page-header-display {
+        padding-left: 32%;
+        padding-right: 10%;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .plans-page-header-display::before {
+        content: "";
+        background-image: url("img/send.svg");
+        position: absolute;
+        left: 25%;
+        width: 60px;
+        height: 54px;
+    }
+
+    .plans-page-header-display::after {
+        content: "";
+        background-image: url("img/geo-wave.svg");
+        position: absolute;
+        left: 30%;
+        bottom: -75px;
+        width: 118px;
+        height: 39px;
+    }
+
+    .plans-page-header-plans {
+        grid-template-columns: repeat(3, 230px);
+        column-gap: 10px;
+        margin-top: 40px;
+        align-self: flex-end;
+    }
+
+    .plans-page-header-plans div.plan-card:nth-child(2) {
+        position: relative;
+    }
+
+    .plans-page-header-plans div.plan-card:nth-child(2)::before {
+        content: "";
+        background-image: url("img/geo-dot.svg");
+        position: absolute;
+        right: -39px;
+        top: -45px;
+        width: 62px;
+        height: 62px;
+        rotate: 60deg;
+        z-index: -1;
+    }
+
+    .plan-card-divider {
+        width: 100%;
+        height: 3px;
+        margin: 1rem 0;
+    }
+
+    /* #endregion */
+
+    /* #region plan description */
+
+    .plan-description-container {
+        padding: 50px 40px;
+        position: relative;
+    }
+
+    .plan-description-container::before {
+        content: "";
+        background-image: url("img/plan-seperator.svg");
+        position: absolute;
+        margin: auto;
+        inset: 0;
+        width: 86px;
+        height: 84px;
+    }
+
+    .plan-description-items {
+        row-gap: 6rem;
+    }
+
+    .plan-description-item {
+        column-gap: 50px;
+    }
+
+    .plan-description-img {
+        transform: none !important;
+    }
+
+    .plan-description-img>img {
+        width: 80%;
+    }
+
+    /* #endregion */
+
+    /* #region plan comparison */
+
+    .plan-comparison-table {
+        max-width: 85%;
+    }
+
+    .plan-comparison-table thead {
+        border-bottom: 0 solid;
+    }
+
+    .plan-comparison-table tbody tr td:first-child {
+        width: 15rem;
+    }
+
+    .plan-comparison-table tbody tr td:not(:first-child) {
+        padding: 8px;
+        text-align: center;
+    }
+
+    .th-mobile {
+        rotate: 0deg;
+    }
+
+    /* #endregion */
+
+    .plan-comparison-table-header th {
+        background-color: white;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* #region plans page header */
+
+    .plans-page-header::before {
+        bottom: 40px;
+        height: 600px;
+    }
+
+    .plans-page-header-display {
+        margin-top: 80px;
+    }
+
+    .plans-page-header-display::before {
+        left: auto;
+        bottom: -105px;
+        right: 200px;
+    }
+
+    .plans-page-header-display::after {
+        left: auto;
+        bottom: -60px;
+        right: 0;
+    }
+
+    /* #endregion */
+
+    /* #region plan description */
+
+    .view-features {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /* #endregion */
+
+    /* #region plan comparison */
+
+    /* #endregion */
+
+}
+
+@media (min-width: 1200px) {
+
+    /* #region plans page header */
+
+    .plans-page-header::before {
+        background: url("img/plan-header-test-image.svg") no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+        bottom: -70px;
+    }
+
+    .plans-page-header-display {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 95px;
+        width: 100%;
+    }
+
+    .plans-page-header-display::before {
+        content: none;
+    }
+
+    .plans-page-header-display h2.plans-page-header-title {
+        position: relative;
+    }
+
+    .plans-page-header-display h2.plans-page-header-title::before {
+        content: "";
+        background-image: url("img/send.svg");
+        position: absolute;
+        right: -95px;
+        top: -30px;
+        width: 60px;
+        height: 54px;
+    }
+
+    .plans-page-header-display::after {
+        left: auto;
+        right: 50px;
+    }
+
+    .plans-page-header-plans {
+        grid-template-columns: repeat(3, 250px);
+        align-self: center;
+        /* margin-left: 75px; */
+        margin-top: 70px;
+    }
+
+    /* #endregion */
+
+    /* #region plan description */
+
+    .plan-description-container {
+        max-width: 992px;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* #endregion */
+
+    /* #region plan comparison */
+
+    .plan-comparison-table {
+        max-width: 992px;
+    }
+
+    /* #endregion */
+
+}
+
+/* #endregion*/
+
+.img {}
+
+.plan-description-detail-title img {
+    margin-top: -1.7rem;
+    max-width: 4.5rem;
+}
+
+/*  change */
+body > main > div > section.plan-description > div > div > div.d-flex.flex-column-reverse.flex-md-row-reverse.plan-description-item > div.plan-description-detail > header > img {
+    max-width: 2.5rem;
+}
+
+.plan-comparison-table-header {
+    position: sticky;
+    top: 63px;
+    /* background-color: white; */
+    height: 80px;
+}

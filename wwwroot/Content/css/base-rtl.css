@@ -1,0 +1,104 @@
+.product-info-section-title::before {
+	right: 0;
+}
+
+.info-tip {
+    padding: 10px 20px 0 0;
+    background-position: right 11px;
+}
+
+.info-box, .info-box-short {
+    background: url(img/rtl/info_box.png) no-repeat right top;
+    padding: 10px 65px 45px 10px;
+}
+
+.category-name {
+    background-position: 5px center;
+}
+.category-list-title {
+    padding: 5px 10px 5px 0;
+    float: right;
+}
+.category-list-search {
+    float: left;
+    padding: 5px 0 0 10px;
+}
+input.category-search-box, input.category-search-box:focus { background-position: 2px 3px; }
+
+.white-popup-block { direction: rtl;text-align: right; }
+.mfp-close {
+    left: 0;
+    right: auto;
+}
+
+.vlst li {
+    padding: 0 10px 5px 0;
+    background: url(img/rtl/arrow.gif) no-repeat right 7px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+.vlst li li {
+    background-position: right 10px;
+}
+.vlst-gray li {
+    background-image: url(img/left_gray.gif);
+}
+
+
+.validation-summary-errors li {
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 2px 10px 2px 0;
+    background-position: right 12px;
+}
+
+.product-data-list dt {
+    float: right;
+    clear: right;
+    text-align: left;
+}
+.product-data-list dd {
+    margin: 0 155px 0 0;
+}
+.external-links li { padding: 5px 20px 0 15px; background-position: right 7px; }
+.attached-files h4 {
+    padding: 0 15px 5px 0 !important;
+    margin: 0 5px 5px 0 !important;
+    background: url(img/rtl/bullet_big.gif) no-repeat right 5px;
+}
+.attached-files td { padding: 2px 0 2px 20px; }
+
+.image-list-zoom {
+    padding: 0 20px 3px 0;
+    background-position: right top;
+    float: right;
+}
+.image-list-small li {
+    float: right;
+}
+
+p.note { background-position: right top; }
+
+.success-box { background: url(img/rtl/green_box.png) no-repeat right top; }
+
+.pc-icn { margin: 4px 0 0 4px; }
+
+.pager-status { float: right; padding: 2px 0 2px 5px; }
+.pager-direct { float: left; }
+.pager-direct * { font-size: 10px; }
+.pager a { float: right; }
+
+.alert-reg-form h3 { background: url(img/rtl/bullet_big.gif) no-repeat right center; }
+
+
+.pull-side {
+    float: left;
+}
+.text-side {
+    text-align: left;
+}
+
+.table .user-image {
+    float: right;
+    margin-left: 5px;
+}
