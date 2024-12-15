@@ -1,0 +1,14 @@
+/* 
+    ============
+     top header
+    ============ 
+*/
+.top-header-menu-item-border {
+  border-left: 1px solid #e0e0e0;
+  padding: 0 1rem;
+}
+
+.top-header-menu-link--light {
+  color: #757575 !important;
+  font-weight: 400 !important;
+}
