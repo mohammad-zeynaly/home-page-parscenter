@@ -74,10 +74,11 @@
   --color-gold: #c49a26;
   --color-diamond: #77b3ec;
   --color-black-neutral-700: #404040;
+  --landing-secondary-color: #20315f;
 }
 
 .color-neutral-500 {
-  color: var(--color-neutral-500);
+  color: var(--color-neutral-500) !important;
 }
 
 .color-neutral-700 {
@@ -85,6 +86,9 @@
 }
 .color-black-neutral-700 {
   color: var(--color-black-neutral-700) !important;
+}
+.color-landing-secondary-color {
+  color: var(--landing-secondary-color) !important;
 }
 .color-neutral-800 {
   color: var(--color-neutral-800) !important;
