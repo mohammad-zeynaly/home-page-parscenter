@@ -11,6 +11,9 @@ const heroSectionCategoriesItemsElem = document.querySelector(
 const mostPopularProductsElem = document.querySelector(
   ".hero-section-most-popular-items"
 );
+const heroSectionBannerItemsElem = document.querySelector(
+  ".hero-section-banner-items"
+);
 
 // static data
 const dropdownItems = ["محصولات", "تامین کننده"];
@@ -363,6 +366,28 @@ const mostPopularProducts = [
     price: 200_000,
   },
 ];
+const heroSectionBannerItems = [
+  {
+    id: 1,
+    title: "تجهیزات صنعتی",
+    img: "./wwwroot/TemplateV2/css/img/home-page/banners/banner-1.png",
+  },
+  {
+    id: 2,
+    title: "خدمات",
+    img: "./wwwroot/TemplateV2/css/img/home-page/banners/banner-2.png",
+  },
+  {
+    id: 3,
+    title: "صنایع دستی",
+    img: "./wwwroot/TemplateV2/css/img/home-page/banners/banner-3.png",
+  },
+  {
+    id: 4,
+    title: "نمایشگاه های مجازی",
+    img: "./wwwroot/TemplateV2/css/img/home-page/banners/banner-4.png",
+  },
+];
 
 const renderDropdownLists = () => {
   dropdownItems.map((item) => {
@@ -409,18 +434,20 @@ const renderMostPopularProductsLists = () => {
     mostPopularProductsElem.insertAdjacentHTML(
       "beforeend",
       `
-       <div class="hero-section-most-popular-item d-flex align-items-center gap-2 ">
-                  <img
-                    class="hero-section-most-popular-item__img"
-                    src="${item.img}"
-                    alt={${item.title}}
-                  />
+       <div class="hero-section-most-popular-item d-flex align-items-start gap-2 ">
+       <a href="#">
+       <img
+         class="hero-section-most-popular-item__img"
+         src="${item.img}"
+         alt={${item.title}}
+       />
+       </href>
                   <div class="d-flex flex-column gap-1">
-                    <h6
+                   <a href="#"
                       class="hero-section-most-popular-item__title text-body-2 m-0"
                     >
                     ${item.title}                    
-                </h6>
+                </a>
                     <h6
                       class="hero-section-most-popular-item__price text-body-1-strong m-0"
                     >
@@ -433,6 +460,33 @@ const renderMostPopularProductsLists = () => {
   });
 };
 renderMostPopularProductsLists();
+
+const renderHeroSectionBannerItems = () => {
+  heroSectionBannerItems.map((item) => {
+    heroSectionBannerItemsElem.insertAdjacentHTML(
+      "beforeend",
+      `
+       <a href="#" class="hero-section-banner-item">
+                  <div class="hero-section-banner-banner d-flex align-items-center">
+                    <img
+                      class="hero-section-banner-item__img"
+                      src=${item.img}
+                      alt="${item.title}"
+                    />
+                  </div>
+                  <div class="hero-section-banner-item-footer">
+                    <h6
+                      class="hero-section-banner-item__title text-body-2-strong m-0"
+                    >
+                      ${item.title}
+                    </h6>
+                  </div>
+                </a>
+      `
+    );
+  });
+};
+renderHeroSectionBannerItems();
 
 const handleShowDropdownMenu = (e) => {
   e.stopPropagation();
