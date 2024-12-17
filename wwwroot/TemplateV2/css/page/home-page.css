@@ -1,3 +1,9 @@
+.open {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* 
     ============
      top header
@@ -11,4 +17,111 @@
 .top-header-menu-link--light {
   color: #757575 !important;
   font-weight: 400 !important;
+}
+
+/* 
+    ========
+     header
+    ========
+*/
+.header-search-box {
+  border: 2px solid var(--color-primary-500);
+  border-radius: 3rem;
+  /* padding: 0.75rem 0.75rem 0.75rem 0.5rem; */
+  padding: 0.3rem;
+  height: 2.5rem;
+  min-width: 45rem;
+  width: 100%;
+}
+.header-menu__item--basket {
+  position: relative;
+}
+.header__badge {
+  background-color: var(--supplier-primary-500);
+  box-shadow: 0px 2px 4px 0px #f4505080;
+  border-radius: 0.3rem;
+  color: #ffffff;
+
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  position: absolute;
+  top: -0.4rem;
+  right: 1.4rem;
+}
+.header-search-box-dropdown {
+  border-left: 1px solid #e0e0e0;
+  padding: 0 1rem;
+}
+.header-search-box__input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  padding: 0.75rem;
+}
+
+.header-search-box__input::placeholder {
+  color: var(--color-neutral-500);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.search__btn {
+  cursor: pointer;
+  background-color: var(--supplier-primary-500);
+  border: none;
+  color: #ffffff;
+  padding: 0.65rem 2.65rem;
+  border-radius: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.dropdown-title-box {
+  /* min-width: 8rem; */
+  cursor: pointer;
+}
+
+.dropdown-list {
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  display: none;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: -1.5rem;
+  top: 100%;
+}
+.dropdown-list__item {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-neutral-800);
+  transition: all 150ms ease-in;
+}
+.dropdown-list__item:hover {
+  background-color: #f6f6f6;
+}
+/*  ============ responsive  ============ */
+@media only screen and (max-width: 1400px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width: 400px) {
 }
