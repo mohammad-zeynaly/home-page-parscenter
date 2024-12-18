@@ -442,14 +442,14 @@ const renderMostPopularProductsLists = () => {
       "beforeend",
       `
        <div class="hero-section-most-popular-item d-flex align-items-start gap-2 ">
-       <a href="#">
+       <a href="#" class="hero-section-most-popular-item-image">
        <img
          class="hero-section-most-popular-item__img"
          src="${item.img}"
          alt={${item.title}}
        />
        </href>
-                  <div class="d-flex flex-column gap-1">
+                  <div class="hero-section-most-popular-item-content d-flex flex-column gap-1">
                    <a href="#"
                       class="hero-section-most-popular-item__title text-body-2 m-0"
                     >

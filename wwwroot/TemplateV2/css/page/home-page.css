@@ -88,7 +88,7 @@ button {
   top: 0;
 }
 .header {
-  padding-top: 1.2rem;
+  margin-top: 1.2rem;
 }
 .top-header-mobile {
   display: none !important;
@@ -424,7 +424,6 @@ button {
 @media only screen and (max-width: 992px) {
   .section-title {
     position: relative;
-    margin-bottom: 2rem;
   }
   .section-title-icon {
     position: absolute;
@@ -446,6 +445,9 @@ button {
     display: block;
   }
   /*  ============ responsive header  ============ */
+  .header {
+    box-shadow: unset;
+  }
   .header__logo {
     display: none;
   }
@@ -458,7 +460,8 @@ button {
   .header-search-filed {
     width: 100%;
   }
-  .header-search-box {
+  .header-search-box
+  /* .header-right-element  */ {
     background-color: #f6f6f6;
     border: none;
   }
@@ -481,9 +484,11 @@ button {
   .top-header-mobile {
     display: flex !important;
   }
-  .header,
+  .header {
+    margin-top: 1rem;
+  }
   .top-header-mobile {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
   }
   .top-header-mobile-menu-btn {
   }
@@ -533,7 +538,7 @@ button {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
   .hero-section-most-popular-item {
     margin-top: 0;
@@ -561,8 +566,60 @@ button {
   }
 }
 @media only screen and (max-width: 768px) {
+  /*  ============ responsive hero-section  ============ */
+  .hero-section-banner__img {
+    height: auto;
+  }
+  .hero-section-banner-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+  }
+  .hero-section-banner-banner {
+    height: auto;
+    justify-content: center;
+    height: 9rem;
+    padding-top: 3rem;
+  }
+  .hero-section-most-popular-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
 }
 @media only screen and (max-width: 576px) {
+  .section-title-text {
+    font-size: 16px;
+  }
+  .top-header-mobile__logo {
+    width: 10rem;
+    height: 1.5rem;
+  }
+  /*  ============ responsive header  ============ */
+  .header-search-box {
+    min-width: 100%;
+  }
+  /*  ============ responsive hero-section  ============ */
+  .hero-section-most-popular-items {
+    gap: 2rem;
+  }
+  .hero-section-most-popular-item {
+    flex-direction: column;
+    /* width: 47%; */
+    gap: 0 !important;
+  }
+  .hero-section-most-popular-item-image {
+    display: block;
+    width: 100%;
+  }
+  .hero-section-most-popular-item__img {
+    width: 80%;
+  }
+  .hero-section-most-popular-item__title {
+    font-size: 13px;
+  }
+  .hero-section-most-popular-item-content {
+    max-width: 8rem;
+    /* margin-right: 0.5rem; */
+  }
 }
 @media only screen and (max-width: 400px) {
 }
