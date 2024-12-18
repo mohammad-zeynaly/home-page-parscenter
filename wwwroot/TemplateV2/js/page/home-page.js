@@ -506,6 +506,8 @@ const selectedDropdownItemHandler = (item) => {
 };
 const mouseHoverCategoryItemHandler = (item, e) => {
   categoriesRenderItemPopupElem.classList.add("open");
+  overlayElem.classList.add("overlay");
+  overlayElem.classList.add("overlay--light");
 };
 
 const mouseUnHoverCategoryItemHandler = () => {
@@ -514,17 +516,11 @@ const mouseUnHoverCategoryItemHandler = () => {
 
 const handleCloses = () => {
   dropdownListsElem.classList.remove("open");
+  overlayElem.classList.remove("overlay");
+  overlayElem.classList.remove("overlay--light");
   categoriesRenderItemPopupElem.classList.remove("open");
 };
 
 dropdownTitleBoxElem.addEventListener("click", handleShowDropdownMenu);
 htmlElem.addEventListener("click", handleCloses);
-// heroSectionCategoriesItemsElem.addEventListener("mouseover", () => {
-//   overlayElem.classList.add("overlay");
-//   overlayElem.classList.add("overlay--light");
-// });
-
-// heroSectionCategoriesItemsElem.addEventListener("mouseout", () => {
-//   overlayElem.classList.add("overlay");
-//   overlayElem.classList.add("overlay--light");
-// });
+overlayElem.addEventListener("mouseover", handleCloses);
