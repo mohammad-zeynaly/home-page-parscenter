@@ -175,7 +175,8 @@
     </style>
   </head>
 
-  <body>
+  <body class="">
+    <div id="overlay" class=""></div>
     <header class="">
       <div class="container">
         <div
@@ -419,7 +420,9 @@
         <div class="container">
           <div class="hero-section__wrapper d-flex align-items-start gap-3">
             <div class="hero-section-categories">
-              <div class="d-flex align-items-center gap-2">
+              <div
+                class="hero-section-categories-menu d-flex align-items-center gap-2"
+              >
                 <svg width="17" height="14" viewBox="0 0 17 14" fill="none">
                   <path
                     d="M15.6216 5.6C16.3843 5.6 17 6.22533 17 7C17 7.77467 16.3843 8.4 15.6216 8.4C14.8589 8.4 14.2432 7.77467 14.2432 7C14.2432 6.22533 14.8589 5.6 15.6216 5.6ZM15.6216 0C16.3843 0 17 0.625333 17 1.4C17 2.17467 16.3843 2.8 15.6216 2.8C14.8589 2.8 14.2432 2.17467 14.2432 1.4C14.2432 0.625333 14.8589 0 15.6216 0ZM15.6216 11.2C16.3843 11.2 17 11.8347 17 12.6C17 13.3653 16.3751 14 15.6216 14C14.8681 14 14.2432 13.3653 14.2432 12.6C14.2432 11.8347 14.8589 11.2 15.6216 11.2ZM11.9459 13.5333H0.918919C0.413513 13.5333 0 13.1133 0 12.6C0 12.0867 0.413513 11.6667 0.918919 11.6667H11.9459C12.4514 11.6667 12.8649 12.0867 12.8649 12.6C12.8649 13.1133 12.4514 13.5333 11.9459 13.5333ZM11.9459 7.93333H0.918919C0.413513 7.93333 0 7.51333 0 7C0 6.48667 0.413513 6.06667 0.918919 6.06667H11.9459C12.4514 6.06667 12.8649 6.48667 12.8649 7C12.8649 7.51333 12.4514 7.93333 11.9459 7.93333ZM12.8649 1.4C12.8649 1.91333 12.4514 2.33333 11.9459 2.33333H0.918919C0.413513 2.33333 0 1.91333 0 1.4C0 0.886667 0.413513 0.466667 0.918919 0.466667H11.9459C12.4514 0.466667 12.8649 0.886667 12.8649 1.4Z"
@@ -477,6 +480,211 @@
                     />
                   </svg>
                 </div> -->
+              </div>
+              <div
+                class="categories-render-popup"
+                onclick="event.stopPropagation();"
+              >
+                <div class="categories-render-popup-menus">
+                  <ul
+                    class="categories-render-popup-menu d-flex flex-column gap-2"
+                  >
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link text-body-1-strong"
+                        >دسته بندی 1</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                      >
+                        منو یک
+                      </a>
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو دو</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو سه
+                      </a>
+                    </li>
+                  </ul>
+                    <ul
+                    class="categories-render-popup-menu d-flex flex-column gap-2"
+                  >
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link text-body-1-strong"
+                        >دسته بندی 1</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                      >
+                        منو یک
+                      </a>
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو دو</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو سه
+                      </a>
+                    </li>
+                  </ul>
+                    <ul
+                    class="categories-render-popup-menu d-flex flex-column gap-2"
+                  >
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link text-body-1-strong"
+                        >دسته بندی 1</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                      >
+                        منو یک
+                      </a>
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو دو</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو سه
+                      </a>
+                    </li>
+                  </ul>
+                    <ul
+                    class="categories-render-popup-menu d-flex flex-column gap-2"
+                  >
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link text-body-1-strong"
+                        >دسته بندی 1</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                      >
+                        منو یک
+                      </a>
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو دو</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو سه
+                      </a>
+                    </li>
+                  </ul>
+                    <ul
+                    class="categories-render-popup-menu d-flex flex-column gap-2"
+                  >
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link text-body-1-strong"
+                        >دسته بندی 1</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                      >
+                        منو یک
+                      </a>
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو دو</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو سه
+                      </a>
+                    </li>
+                  </ul>
+                    <ul
+                    class="categories-render-popup-menu d-flex flex-column gap-2"
+                  >
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link text-body-1-strong"
+                        >دسته بندی 1</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                      >
+                        منو یک
+                      </a>
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو دو</a
+                      >
+                    </li>
+                    <li class="categories-render-popup-menu-item">
+                      <a
+                        href="#"
+                        class="categories-render-popup-menu__link categories-render-popup-menu__sub-link text-body-2"
+                        >منو سه
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="hero-section-banner">
@@ -567,7 +775,7 @@
 
     <script src="wwwroot/TemplateV2/js/layouts/landingLayout.js"></script>
 
-    <script src="wwwroot/TemplateV2/js/page/main-landing.js"></script>
+    <!-- <script src="wwwroot/TemplateV2/js/page/main-landing.js"></script> -->
 
     <script>
       $(function () {

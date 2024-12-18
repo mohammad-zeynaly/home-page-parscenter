@@ -1,6 +1,7 @@
 // elements
 const htmlElem = document.querySelector("html");
 const bodyElem = document.querySelector("body");
+const overlayElem = document.getElementById("overlay");
 const dropdownListsElem = document.querySelector(".dropdown-list");
 const dropdownIconElem = document.querySelector(".dropdown__icon");
 const dropdownTitleBoxElem = document.querySelector(".dropdown-title-box");
@@ -14,7 +15,11 @@ const mostPopularProductsElem = document.querySelector(
 const heroSectionBannerItemsElem = document.querySelector(
   ".hero-section-banner-items"
 );
-
+const categoriesRenderItemPopupElem = document.querySelector(
+  ".categories-render-popup"
+);
+const btn = document.getElementById("btn");
+const testtext = document.getElementById("testtext");
 // static data
 const dropdownItems = ["محصولات", "تامین کننده"];
 const categoriesItems = [
@@ -404,8 +409,10 @@ const renderCategoriesLists = () => {
     heroSectionCategoriesItemsElem.insertAdjacentHTML(
       "beforeend",
       `
-       <div class="hero-section-categories-item d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-3">
+       <div class="hero-section-categories-item d-flex justify-content-between align-items-center" onmouseover="mouseHoverCategoryItemHandler('${
+         item.title
+       }')" onmouseout="mouseUnHoverCategoryItemHandler()" onclick="event.stopPropagation();">
+                  <div class="d-flex align-items-center gap-2">
                    <div style="min-width:1.5rem;" class="hero-section-categories-item__icon"> ${
                      item?.icon ?? ``
                    }</div>
@@ -416,7 +423,7 @@ const renderCategoriesLists = () => {
                      ${item.title}
                     </h6>
                   </div>
-                  <svg width="4" height="7" viewBox="0 0 4 7" fill="none">
+                  <svg class="hero-section-categories-item__arrow-icon" width="4" height="7" viewBox="0 0 4 7" fill="none">
                     <path
                       d="M3.82232 5.92729L1.46545 3.49687L3.82232 1.06644C4.05923 0.822148 4.05923 0.427517 3.82232 0.183222C3.58542 -0.0610738 3.20273 -0.0610738 2.96583 0.183222L0.177677 3.05839C-0.0592255 3.30269 -0.0592255 3.69732 0.177677 3.94161L2.96583 6.81678C3.20273 7.06107 3.58542 7.06107 3.82232 6.81678C4.05315 6.57248 4.05923 6.17159 3.82232 5.92729Z"
                       fill="#81858B"
@@ -497,10 +504,27 @@ const selectedDropdownItemHandler = (item) => {
   console.log("item=> ", item);
   dropdownTitleElem.innerText = item;
 };
+const mouseHoverCategoryItemHandler = (item, e) => {
+  categoriesRenderItemPopupElem.classList.add("open");
+};
+
+const mouseUnHoverCategoryItemHandler = () => {
+  // categoriesRenderItemPopupElem.classList.remove("open");
+};
 
 const handleCloses = () => {
   dropdownListsElem.classList.remove("open");
+  categoriesRenderItemPopupElem.classList.remove("open");
 };
 
 dropdownTitleBoxElem.addEventListener("click", handleShowDropdownMenu);
 htmlElem.addEventListener("click", handleCloses);
+// heroSectionCategoriesItemsElem.addEventListener("mouseover", () => {
+//   overlayElem.classList.add("overlay");
+//   overlayElem.classList.add("overlay--light");
+// });
+
+// heroSectionCategoriesItemsElem.addEventListener("mouseout", () => {
+//   overlayElem.classList.add("overlay");
+//   overlayElem.classList.add("overlay--light");
+// });
