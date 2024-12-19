@@ -6,6 +6,9 @@ const dropdownListsElem = document.querySelector(".dropdown-list");
 const dropdownIconElem = document.querySelector(".dropdown__icon");
 const dropdownTitleBoxElem = document.querySelector(".dropdown-title-box");
 const dropdownTitleElem = document.querySelector(".dropdown__title");
+const heroSectionCategories = document.querySelector(
+  ".hero-section-categories"
+);
 const heroSectionCategoriesItemsElem = document.querySelector(
   ".hero-section-categories-items"
 );
@@ -505,6 +508,7 @@ const selectedDropdownItemHandler = (item) => {
   dropdownTitleElem.innerText = item;
 };
 const mouseHoverCategoryItemHandler = (item, e) => {
+  heroSectionCategories.style.zIndex = "200";
   categoriesRenderItemPopupElem.classList.add("open");
   overlayElem.classList.add("overlay");
   overlayElem.classList.add("overlay--light");
@@ -519,6 +523,7 @@ const handleCloses = () => {
   overlayElem.classList.remove("overlay");
   overlayElem.classList.remove("overlay--light");
   categoriesRenderItemPopupElem.classList.remove("open");
+  heroSectionCategories.style.zIndex = "0";
 };
 
 const glideCategories = new Glide("#heroSectionBannerSlider", {

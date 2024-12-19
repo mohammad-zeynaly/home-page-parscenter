@@ -86,9 +86,12 @@ button {
   padding-bottom: 1rem;
   position: sticky;
   top: 0;
+  z-index: 89;
 }
+
 .header {
   margin-top: 1.2rem;
+  box-shadow: unset;
 }
 .top-header-mobile {
   display: none !important;
@@ -192,6 +195,7 @@ button {
     ==============
 */
 .hero-section {
+  margin-bottom: 3rem;
 }
 .hero-section__wrapper {
   background-color: #ffffff;
@@ -199,16 +203,18 @@ button {
   border-radius: 0.5rem;
   /* padding: 1.25rem 0 1.25rem 1.25rem; */
   padding-left: 1.25rem;
-  height: 61vh;
+  /* height: 61vh; */
+  height: auto;
   overflow: hidden;
 }
 .hero-section-categories {
   background-color: #ffffff;
   width: 19%;
   position: relative;
-  z-index: 91;
+  /* z-index: 91; */
   padding: 1.25rem 0;
 }
+
 .categories-render-popup {
   background: #fff;
   border-left: 1px solid #eee;
@@ -252,7 +258,8 @@ button {
 .hero-section-categories-items {
   overflow: hidden;
   /* overflow-y: auto; */
-  height: 55vh;
+  /* height: 55vh; */
+  height: 34rem;
 }
 .hero-section-categories-items:hover {
   overflow-y: auto;
@@ -368,8 +375,12 @@ button {
   .hero-section-banner-items {
     gap: 0.6rem;
   }
+  .hero-section-categories-item {
+    padding: 0.25rem 0.3rem;
+  }
   .hero-section-categories-items {
-    height: 54vh;
+    /* height: 54vh; */
+    height: 33.5rem;
   }
   .hero-section-most-popular-item__img {
     width: 7.2rem;
