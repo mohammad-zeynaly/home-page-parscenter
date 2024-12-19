@@ -518,7 +518,7 @@ button {
     padding: 0;
   }
   .hero-section-banner-items {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
     gap: 0.5rem;
   }
   .hero-section-banner-banner {
@@ -538,7 +538,7 @@ button {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
   .hero-section-most-popular-item {
     margin-top: 0;
@@ -578,7 +578,7 @@ button {
     height: auto;
     justify-content: center;
     height: 9rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .hero-section-most-popular-items {
     grid-template-columns: repeat(2, 1fr);
@@ -622,4 +622,10 @@ button {
   }
 }
 @media only screen and (max-width: 400px) {
+  .section-title-icon {
+    right: -1.4rem;
+  }
+  .section-title-text {
+    padding-right: 1.2rem;
+  }
 }
