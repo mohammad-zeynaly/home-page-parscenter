@@ -692,11 +692,30 @@
               </div>
             </div>
             <div class="hero-section-banner">
-              <img
+              <!-- <img
                 class="hero-section-banner__img"
                 src="./wwwroot/TemplateV2/css/img/home-page/banner.png"
                 alt="عکس بنر"
-              />
+              /> -->
+              <!-- slider container categories -->
+              <div
+                class="glide hero-section-banner-slider"
+                id="heroSectionBannerSlider"
+              >
+                <div data-glide-el="track" class="glide__track">
+                  <div class="glide__slides categories__slides">
+                    <!-- slider items categories -->
+                    <div class="glide__slide">
+                      <!-- box categories -->
+                      <img
+                        class="hero-section-banner__img"
+                        src="./wwwroot/TemplateV2/css/img/home-page/banner.png"
+                        alt="عکس بنر"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 class="mobile-access-menu d-flex align-items-center justify-content-around gap-3"
               >
@@ -773,6 +792,7 @@
     <footer></footer>
 
     <!-- scripts -->
+    <script src="wwwroot/TemplateV2/js/slider/glide.min.js"></script>
     <script src="wwwroot/TemplateV2/js/page/home-page.js"></script>
     <script src="wwwroot/TemplateV2/js/jquery/jquery-3.7.1.js"></script>
 
@@ -787,8 +807,6 @@
     <script src="wwwroot/Scripts/version-controller.js"></script>
 
     <script src="wwwroot/TemplateV2/js/component/dropdown.js"></script>
-
-    <script src="wwwroot/TemplateV2/js/slider/glide.min.js"></script>
 
     <script src="wwwroot/TemplateV2/js/component/drawer.js"></script>
 

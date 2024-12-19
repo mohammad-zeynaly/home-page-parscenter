@@ -521,6 +521,34 @@ const handleCloses = () => {
   categoriesRenderItemPopupElem.classList.remove("open");
 };
 
+const glideCategories = new Glide("#heroSectionBannerSlider", {
+  direction: htmlElem.getAttribute("dir"),
+  perView: 1,
+  type: "carousel",
+  gap: 32,
+  autoplay: 3000,
+  // breakpoints: {
+  //   1200: {
+  //     perView: 4,
+  //   },
+  //   992: {
+  //     perView: 3,
+  //   },
+  //   768: {
+  //     perView: 2.5,
+  //     gap: 16,
+  //   },
+  //   440: {
+  //     perView: 2.1,
+  //     gap: 16,
+  //   },
+  //   370: {
+  //     perView: 1.7,
+  //     gap: 16,
+  //   },
+  // },
+}).mount();
+
 dropdownTitleBoxElem.addEventListener("click", handleShowDropdownMenu);
 htmlElem.addEventListener("click", handleCloses);
 overlayElem.addEventListener("mouseover", handleCloses);
