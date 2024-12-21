@@ -308,12 +308,14 @@ button {
 }
 .hero-section-categories-items:hover {
   overflow-y: auto;
+  direction: ltr;
 }
 .hero-section-categories-item {
   padding: 0.2rem 0.3rem;
   cursor: pointer;
   transition: all 150ms ease-in;
   padding-right: 1.25rem;
+  direction: rtl;
 }
 .hero-section-categories-menu {
   padding-right: 1.25rem;
