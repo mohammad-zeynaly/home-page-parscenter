@@ -10,13 +10,16 @@ const headerLeftElement = document.querySelector(".header-left-element");
 const headerElement = document.querySelector("header");
 const mainElement = document.querySelector("main");
 const headerCategoryBtn = document.querySelector(".header-category-btn");
-
+const headerCategoryWrapper = document.querySelector(
+  ".header-category-wrapper"
+);
+const headerCategoryItems = document.querySelector(".header-category-items");
 const selectedDropdownItemHandler = (item) => {
   dropdownTitleElem.innerText = item;
   dropdownListsElem.classList.remove("dropdown-show");
 };
 const mouseHoverCategoryItemHandler = (e) => {
-  heroSectionCategories.style.zIndex = "200";
+  heroSectionCategories.style.zIndex = "99";
   overlayElem.classList.add("overlay");
   overlayElem.classList.add("overlay--light");
 };
@@ -25,6 +28,7 @@ const handleCloses = () => {
   overlayElem.classList.remove("overlay");
   overlayElem.classList.remove("overlay--light");
   heroSectionCategories.style.zIndex = "0";
+  headerCategoryItems.classList.remove("d-flex");
 };
 
 const glideCategories2 = new Glide("#heroSectionBannerSlider", {
@@ -45,23 +49,10 @@ document.querySelectorAll(".categories-render-popup").forEach((item) => {
   item.addEventListener("mouseout", handleCloses);
 });
 
-// window.addEventListener("scroll", function () {
-//   const mainElement = document.querySelector("main");
-//   const mainPosition = mainElement.getBoundingClientRect();
-//   console.log("scroll=> ");
-
-//   // بررسی اینکه آیا عنصر main در نمای کاربر است یا خیر
-//   if (mainPosition.top <= window.innerHeight && mainPosition.bottom >= 0) {
-//     console.log("شما به عنصر main رسیده‌اید!");
-//   } else {
-//   }
-// });
-
 window.addEventListener("scroll", function () {
-  const headerBottom = headerElement.getBoundingClientRect().bottom; // پایین header
-  const mainTop = mainElement.getBoundingClientRect().top; // بالای main
+  const headerBottom = headerElement.getBoundingClientRect().bottom;
+  const mainTop = mainElement.getBoundingClientRect().top;
 
-  // بررسی اینکه آیا پایین header به بالای main رسیده است
   if (
     headerBottom >= mainTop &&
     headerBottom <= mainTop + mainElement.offsetHeight
@@ -73,4 +64,10 @@ window.addEventListener("scroll", function () {
     headerLeftElement.classList.remove("d-none");
     headerCategoryBtn.classList.add("d-none");
   }
+});
+
+headerCategoryWrapper.addEventListener("mouseover", () => {
+  headerCategoryItems.classList.add("d-flex");
+  overlayElem.classList.add("overlay");
+  overlayElem.classList.add("overlay--light");
 });
