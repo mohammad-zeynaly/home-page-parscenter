@@ -97,18 +97,19 @@ button {
 .header-category-wrapper {
   position: relative;
 }
-
-.header-category-items {
+.header-category-items-wrapper {
   position: absolute;
-  background-color: #ffffff;
-  min-width: 19rem;
-  border-radius: 0 0 0 0.6rem;
+  z-index: 100;
   top: 3.2rem;
   left: 0;
+}
+.header-category-items {
   display: none;
-  z-index: 100;
-  height: 34rem;
-  padding: 1rem 0 1rem 1rem;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  min-width: 19rem;
+  border-radius: 0 0 0.6rem 0;
+  height: 42rem;
   overflow: hidden;
 }
 .header-category-items:hover {
@@ -129,7 +130,9 @@ button {
 .header-category-item:hover .header-category-item__arrow-icon path {
   fill: var(--color-primary-500);
 }
-
+.header-category-item:hover .categories-render-popup {
+  display: block;
+}
 .header-layout {
   margin-top: 1.2rem;
   box-shadow: unset;
