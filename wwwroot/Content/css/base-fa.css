@@ -1,0 +1,12 @@
+body {
+    font-size: 12px;
+}
+body, input, button, select, .tooltip {
+	font-family: Vazirmatn,sans-serif; 
+}
+h1, h2, h3, h4, h5, legend, .nav-search label, .nav-tabs li a, .business-owner-ref, .footer a, .group-item-title {
+    font-family: Vazirmatn !important;
+    font-weight: normal;
+}
+.contact-button-small {/* background-image: url(img/fa/contact.png); */padding-right: 2rem;}
+.contact-button-big {/* background-image: url(img/fa/contact_big.png); */}

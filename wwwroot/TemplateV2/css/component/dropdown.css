@@ -1,0 +1,197 @@
+/* #region dropdown */
+
+.dropdown{
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--color-white);
+	min-width: 206px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	left: 0;
+}
+
+.dropdown-content--right{
+	left: auto;
+	right: 0;
+}
+
+.dropdown-show {
+	display: block !important;
+}
+
+.need-help-dropdown li>a {
+	display: block;
+	padding: 0.625rem 1.25rem;
+}
+
+.need-help-dropdown li>a:hover {
+	background-color: #f5f5f5;
+	background-image: unset !important;
+}
+
+/* #endregion*/
+
+/* #region category dropdown */
+.category-dropdown {
+	position: relative;
+}
+
+.category-dropdown-title {
+	padding-inline: 24px 40px;
+	position: relative;
+	cursor: pointer;
+}
+
+.category-dropdown-title-span {
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 0;
+	display: inline-block;
+	transition: color .1s ease-in-out;
+}
+
+.category-dropdown-title-span:hover, 
+.category-dropdown-title.active .category-dropdown-title-span,
+.category-dropdown-title-span.active{
+	color: var(--color-primary-500);
+}
+
+.category-dropdown-title-span::after{
+	content: "expand_more";
+	font-family: 'Material Symbols Rounded';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	left: -26px;
+    top: 3px;
+	transform: rotate(0deg);
+	transition: transform .5s ease-in-out;
+}
+
+.category-dropdown-title.active .category-dropdown-title-span::after {
+	transform: rotate(180deg);
+}
+
+.category-dropdown-content {
+	border: 1px solid var(--color-anchor-200);
+	border-radius: 7px;
+	background: var(--color-white);
+	position: absolute;
+	/*min-width: 250px;*/
+	width: max-content;
+	top: 40px;
+	z-index: 9;
+}
+
+.category-dropdown-content > ul.categories-toggle{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 65vh;
+	height: 100%;
+	width: max-content;
+	padding-inline-end: 24px;
+}
+
+.category-dropdown-header > a {
+	border-bottom: 1px solid var(--color-anchor-200);
+	padding-block: 15px;
+}
+
+.category-dropdown-link {
+	display: block;
+	cursor: pointer;
+	padding-inline: 24px 20px;
+	padding-block: 10px;
+	transition: color .1s ease-in-out;
+}
+
+.category-dropdown-link:hover,
+.categories-toggle > li:hover > .category-dropdown-link{
+	color: var(--color-primary-500);
+}
+
+.categories-toggle li{
+	position: relative;
+}
+
+.categories-toggle > li:last-child > a {
+	border-bottom: 0;
+}
+
+.categories-toggle > li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	right: 100%;
+	box-shadow: 0px 1px 0px rgba(17,17,26,0.05), 0px 0px 8px rgba(17,17,26,0.1);
+}
+
+.categories-toggle > li > ul {
+	position: absolute;
+	right: 120%;
+	width: 300px;
+	padding-block: 20px;
+	-webkit-box-shadow: -1px 0 6px 0 rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -1px 0 6px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: -1px 0 6px 0 rgba(0, 0, 0, 0.3);
+	background: var(--color-white);
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 7px;
+	top: 0;
+}
+
+.categories-toggle > li:has(ul) > a{
+	position: relative;
+}
+
+.categories-toggle > li:has(ul) > a::after {
+	content: "chevron_left";
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+    transition: transform .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categories-toggle > li:has(ul):hover > a::after {
+	transform: rotate(180deg);
+}
+
+/* #endregion*/

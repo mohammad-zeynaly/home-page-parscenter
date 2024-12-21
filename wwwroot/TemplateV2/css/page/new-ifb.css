@@ -1,0 +1,108 @@
+:root {
+	--column-gap-grid-box: 15px;
+}
+
+body {
+	background-color: #fcfcfc;
+	background-image: url("./img/ecailles.png");
+}
+
+.form-control-text-field {
+	width: 100% !important;
+}
+
+.ifb-container {
+	width: 800px;
+}
+
+.ifb-box {
+	display: grid;
+	grid-template-columns: 100%;
+	row-gap: var(--column-gap-grid-box);
+}
+
+#selected-category-title {
+	margin-top: 1rem;
+}
+
+.requesterin-formation-box {
+	display: grid;
+	grid-template-columns: auto;
+	gap: var(--column-gap-grid-box);
+}
+
+.more-items {
+	height: 170px;
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: var(--column-gap-grid-box);
+	overflow: hidden;
+	transition: height .5s ease-in-out;
+}
+
+.more-items .d-flex{
+	column-gap: 10px;
+}
+
+.more-items .d-flex > *, [data-collapse-toggle] {
+	cursor: pointer;
+}
+
+@media (min-width: 568px) {
+	.requesterin-formation-box {
+		grid-template-columns: auto auto;
+	}
+}
+
+@media (max-width: 568px) {
+	
+	.more-items {
+		height: 150px;
+		grid-template-columns: auto;
+	}
+}
+
+
+/* region select category*/
+.select-category-modal-width {
+	max-width: 700px;
+}
+
+.select-categories-list li {
+	padding: 16px;
+	border: 2px solid var(--color-border-light);
+	border-radius: 7px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+#category-parent-container {
+	padding: 16px;
+	border: 2px solid var(--color-border-dark);
+	border-radius: 7px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+#category-list-container {
+	max-height: 450px;
+	overflow-y: auto;
+	transition: all 400ms;
+}
+
+.select-category-list-loading {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.select-category-list-loading .lds-ellipsis div {
+	background-color: var(--color-primary-500)
+}
+
+/* endregion select category*/

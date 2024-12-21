@@ -1,0 +1,14 @@
+#intro a { background-image: url(img/fa/logo.png); }
+.sbox li {
+    padding: .5rem 1rem;
+    background: url(img/left_gray.gif) no-repeat right 7px;
+}
+.hot-cats h3 { background-image: url(img/fa/promo_head.png); }
+.promo-box h4 { background-image: url(img/fa/promo_head.png); }
+.promo-box-plain h4 { background-image: url(img/fa/promo_head.png); }
+.promo-categories h4 {background-image: url(img/fa/promo_head.png);height: 25px;}
+
+.business-owner { background-image: url(img/fa/business_owner.png); }
+.product-tour-head { background-image: url(img/fa/tour_head.png); }
+
+.footer-logo { background: url(img/fa/footer_logo.png);}

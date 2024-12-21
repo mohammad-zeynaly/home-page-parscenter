@@ -1,0 +1,48 @@
+:root {
+    --font-size-html: 14px;
+    --text-size-h6: 1rem;
+    --text-size-h4: 1.25rem;
+    --text-size-h3: 1.5rem;
+}
+
+.text-size-h6 {
+	font-size: var(--text-size-h6) !important;
+}
+
+.text-size-h4 {
+	font-size: var(--text-size-h4) !important;
+}
+
+/* region media query */
+
+@media (min-width: 992px) {
+    :root {
+        --font-size-html: 16px;
+    }
+}
+
+/* endregion */
+
+
+/* region border-radius*/
+.b-rad-2 {
+	border-radius: 2px;
+}
+
+.b-rad-4 {
+	border-radius: 4px;
+}
+
+.b-rad-7 {
+	border-radius: 7px;
+}
+
+.b-rad-15 {
+	border-radius: 15px;
+}
+
+.b-rad-60 {
+	border-radius: 60px;
+}
+
+/* endregion border-radius*/

@@ -1,0 +1,51 @@
+﻿#content { direction: rtl; }
+#footer { direction: rtl; }
+
+#menubar { padding-right: 10px; padding-left: 0; }
+    #menubar li a { float: right; }
+
+.hlist li { float: right; padding: 0 8px 0 20px; background: url(img/left_gray.gif) no-repeat right 8px; }
+
+.grd img { float: left; margin-right: 3px; margin-left: 0; }
+.grd .pc-icn { margin: 0 0 0 4px; }
+
+.action-button {
+    float: left;    
+    margin-right: 4px;
+    margin-left: 0;
+}
+.action-bar h4 { float: right; }
+.action-bar .action-button { margin-right:5px; margin-left: 0; }
+
+.pc-icn {
+    float: right;
+    margin-left: 4px;
+    margin-right: 0;
+}
+
+.company-status { float: right; }
+
+
+.category-name {
+    background-position: 5px center;
+    cursor: pointer;
+    padding: 2px 5px 2px 0;
+}
+.category-list-title {
+    padding: 5px 10px 5px 0;
+    float: right;
+}
+.category-list-search {
+    float: left;
+    padding: 5px 0 0 10px;
+}
+input.category-search-box, input.category-search-box:focus { background-position: 2px 3px; }
+
+.mfp-content {
+    text-align: right;
+    direction: rtl;
+}
+
+/*.category-editor-list { float: right; }
+.category-editor-form { float: left; }*/
+/*.propery-editor { direction: ltr; }*/

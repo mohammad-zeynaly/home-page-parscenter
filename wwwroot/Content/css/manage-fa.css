@@ -1,0 +1,12 @@
+﻿.products-status .btn { background-image: url(img/fa/product_new_list.png); }
+
+.company-business-type ul { background-image: url(img/fa/business_type.png); }
+.company-business-type-service { background-image: url(img/fa/business_type.png); }
+
+.product-status-legend { background-image: url(img/fa/legend_help.png); }
+
+/* --- Change the font for tinymce editor ----- */
+.mce-widget button, .mce-menu-item .mce-text {
+    font-family: Vazirmatn, sans-serif;
+    font-size: 12px !important;
+}

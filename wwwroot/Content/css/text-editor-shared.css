@@ -1,0 +1,99 @@
+﻿.editor-shared h5 {
+	font: bold 16px Arial;
+	margin-bottom: 10px;
+}
+.editor-shared h6 {
+	font: bold 14px Arial;
+	margin-bottom: 10px;
+}
+.editor-shared p {
+	margin-bottom: 10px;
+}
+.editor-shared ul, .editor-shared ol {
+	margin-bottom: 10px;
+}
+.editor-shared ul li, .editor-shared ol li {
+   list-style-type: disc;
+}
+.editor-shared ol li {
+    list-style-type: decimal;
+}
+.editor-shared td {
+	padding: 4px;
+	border: solid 1px #eaeaea;
+	border-collapse: collapse;
+}
+.editor-shared div.imp {
+	border: solid 1px #eaeaea;
+	background: #f3f3f3;
+	padding: 15px;
+	margin: 0 auto 10px auto;
+	width: 90%;
+}
+.editor-shared strong {
+	font-weight: bold;
+}
+.editor-shared em {
+	font-style: italic;
+}
+
+/* #region Content Section */
+.editor-shared .mf-content-section {
+    margin-bottom: 15px;
+    position: relative;
+}
+.editor-shared .mf-content-section:hover {
+    background: #fafafa;
+}
+.editor-shared .mf-content-section-head {
+    border-bottom: solid 1px #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.editor-shared .mf-content-section-head h6 {
+    background: #ccc;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+}
+.editor-shared .mf-content-section span.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #696969;
+    cursor: pointer;
+}
+.editor-shared .mf-content-section span.close:hover {
+    color: #cd0000;
+}
+.editor-shared .mf-content-section-body {
+    padding: 5px;
+}
+/* #endregion */
+
+.editor-shared table {
+    margin-bottom: 15px;
+}
+.editor-shared td, .editor-shared th {
+    border: solid 1px #ddd;
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.editor-shared thead td, .editor-shared thead th {
+    font-weight: bold;
+    border-bottom-width: 2px;
+}
+.editor-shared table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}

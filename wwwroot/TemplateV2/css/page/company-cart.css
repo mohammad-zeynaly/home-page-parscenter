@@ -1,0 +1,471 @@
+.order-checkout-info-container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1rem;
+}
+
+.order-checkout-info-container label {
+	line-height: 2;
+}
+
+
+@media screen and (max-width: 992px) {
+	.order-checkout-info-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-gap: 2rem;
+	}
+}
+
+.order-checkout-summery {
+	height: fit-content;
+}
+
+.order-checkout-summery p {
+	display: flex;
+	align-items: center;
+}
+
+.order-checkout-summery div {
+	margin-bottom: 1rem;
+}
+
+.footer-company {
+	margin-top: 0;
+}
+
+.quantity-box {
+	flex: 0;
+	gap: 1rem;
+	border: 1px solid var(--color-border-light);
+	border-radius: 4px;
+	height: 45px;
+}
+
+.quantity-box > button {
+	border: none;
+	padding-inline: 0.7rem;
+}
+
+.btn-add-to-product-quantity,
+.btn-reduce-quantity-products {
+	position: relative;
+}
+
+.quantity-box > button:before {
+	content: "";
+	width: 1px;
+	height: 100%;
+	background-color: var(--color-border-light);
+	position: absolute;
+	top: 0;
+}
+
+.btn-add-to-product-quantity:before {
+	left: 0;
+}
+
+.btn-reduce-quantity-products:before {
+	right: 0;
+}
+
+.product-quantity {
+	margin: 0;
+	font-size: 18px;
+}
+
+.content-delete-product-modal {
+	margin-block: 2rem;
+	gap: 1rem;
+}
+
+.btns-delete-product-modal {
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.cart-empty-img {
+	max-width: 180px;
+}
+
+/* region */
+.ord-cmp-status-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 60px;
+}
+
+.ord-success .ord-cmp-status-icon {
+	background-color: var(--color-icon-success);
+}
+.ord-failed .ord-cmp-status-icon {
+	background-color: var(--color-icon-error);
+}
+
+.ord-failed .ord-cmp-status-text {
+	color: var(--color-icon-error)
+}
+.ord-success .ord-cmp-status-text {
+	color: var(--color-icon-success)
+}
+
+/* endregion */
+
+.opacity-0 {
+	opacity: 0 !important;
+}
+
+.payment-option-container {
+	padding: 12px 16px;
+	margin-bottom: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+        "title price";
+	background-color: white;
+	transition: all .1s;
+}
+
+.default-box-decoration {
+	border: 2px solid var(--color-divdier);
+	border-radius: 7px;
+}
+
+.active-box-decoration {
+	border: 2px solid var(--color-secondary-500);
+	border-radius: 7px;
+}
+
+.payment-option-container:hover,
+.supplier-payment-option-container:hover{
+	border-color: var(--color-secondary-500);
+	cursor: pointer;
+}
+
+.payment-option-container-active {
+	border-color: var(--color-secondary-500);
+}
+
+.payment-option-container-active .payment-radio-button-checked {
+	opacity: 1 !important;
+	transition: opacity .1s;
+}
+
+.payment-title-layout {
+	grid-area: title;
+	display: flex;
+	gap: 2rem;
+}
+
+.payment-features-layout {
+	grid-area: features;
+	align-self: center;
+	border-inline: 1px solid var(--color-border-light);
+	display: grid;
+	grid-template-columns: auto;
+	padding-inline: 1rem;
+	gap: 0.5rem;
+}
+
+.payment-price-layout {
+	grid-area: price;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+}
+
+.payment-radio-button {
+	height: 30px;
+	width: 30px;
+	border-radius: 60px;
+	border: 2px solid var(--color-border-light);
+}
+
+.payment-radio-button-checked {
+	height: 23px;
+	width: 23px;
+	border-radius: 60px;
+	background-color: var(--color-secondary-500);
+}
+
+.default-radio-button-check {
+	border-radius: 60px;
+	background-color: var(--color-secondary-500);
+}
+
+.default-radio-thumb {
+	border-radius: 60px;
+	border: 2px solid var(--color-border-light);
+}
+
+.center-with-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* region record payment detail */ 
+
+.header-payment-detail {
+	position: relative;
+	padding-right: 12px;
+}
+
+.header-payment-detail:before {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	border-radius: 7px;
+	background-color: var(--color-primary-500);
+	right: 0;
+}
+
+.select-payment-receipt-label {
+	padding: 4rem;
+	width: fit-content;
+	background-color: var(--color-border-light);
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.select-payment-receipt-label > span {
+	font-size: 38px;
+}
+
+.payment-receipt-span {
+	color: #898989;
+}
+
+.payment-receipt-box,
+.payment-details-box {
+	flex: 1;
+}
+
+.payment-receipt-box {
+	position: relative;
+}
+
+.payment-receipt-box:before {
+	content: "";
+	position: absolute;
+	background-color: var(--color-border-light);
+	width: 100%;
+	height: 2px;
+	bottom: -25px;
+}
+
+.box-supplier-account-information {
+	margin-bottom: 2rem;
+}
+
+@media  (min-width: 576px) {
+	.box-supplier-account-information {
+		width: 50%;
+	}
+}
+
+@media  (min-width: 768px) {
+	.payment-receipt-box:before{
+		left: 15%;
+		height: 100%;
+		width: 2px;
+		bottom: auto;
+	}
+}
+
+.payment-receipt-width-modal{
+	max-width: 800px !important;
+	margin: 0 !important;
+}
+
+/* region cropper */
+
+.cropper-parent-box {
+	height: 400px;
+	background-color: #DADADA;
+	border-radius: 3px;
+	overflow: hidden;
+	border: 1px solid #BDBDBD;
+}
+
+.cropper-box {
+	gap: 1rem;
+}
+
+.cropper-label {
+	padding: 4rem;
+	width: fit-content;
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%23333' stroke-width='3' stroke-dasharray='14%2c 9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.preview-original-image {
+	height: 100%;
+	width: auto;
+	background: white;
+}
+
+@media screen and (max-width: 576px) {
+	.cropper-result-box,
+	.preview-original-image {
+		height: auto;
+	}
+}
+
+.cropper-result-box .cropper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.cropper-buttons-box,
+.cropper-action-box {
+	gap: 1rem;
+}
+
+.aspectratio-box {
+	column-gap: 2rem;
+}
+
+.cropper-buttons {
+	padding: 7px;
+}
+
+.cropper-buttons-box:not(.d-none) ~ .line-btns-cropper {
+	margin-inline: 3rem;
+	width: 3px;
+	height: 30px;
+	background-color: var(--color-divdier);
+}
+
+.preview-original-image img {
+	height: inherit !important;
+	object-fit: scale-down;
+}
+
+.btn-cropper-cancel,
+#change-image-file,
+.btn-cropper-cut-and-upload {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	min-height: 40px;
+}
+
+.btn-cropper-cut-and-upload {
+	color: #fff;
+	background-color: var(--color-primary-500) !important;
+	border-color: #e43725;
+}
+
+.btn-cropper-cut-and-upload[disabled] {
+	cursor: not-allowed;
+	opacity: 0.65;
+	filter: alpha(opacity = 65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.payment-receipt-preview-img {
+	position: relative;
+	padding: 10px;
+	cursor: default;
+}
+
+.payment-receipt-preview-img > img {
+	width: 150px;
+}
+
+.payment-receipt-preview-img-remove {
+	position: absolute;
+	bottom: -10px;
+	background-color: var(--color-border-light);
+	border-radius: 25px;
+	padding: 3px;
+	display: flex;
+	cursor: pointer;
+}
+
+/* endregion cropper */
+
+.img-product-cart {
+	width: 74px;
+	height: 74px;
+}
+
+.tax-free-product-cart{
+	background-color: var(--color-neutral-300);
+	color: var(--color-neutral-800);
+	padding: 2px 7px;
+	border-radius: 13px;
+}
+
+.custom-table {
+	padding: .5rem 1rem;
+	width: auto;
+}
+
+.custom-table-column,
+.custom-table-column-mobile {
+	color: var(--color-neutral-500);
+}
+
+.custom-table-body .custom-table-row {
+	border: none;
+	border-bottom: solid 1px #f3f3f3;
+    background-color: transparent;
+}
+
+.custom-table-body .custom-table-row:last-child{
+	border-bottom: none;
+}
+
+.custom-table-row .custom-table-row-value--mobile:not(:first-child){
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+	.custom-table-row .custom-table-row-value--mobile:not(:first-child){
+		justify-content: center;
+	}
+}
+
+.factor-cart-parent {
+	width: 50%;
+	margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+	.factor-cart-parent {
+		width: 100%;
+	}
+}
+
+.dl-info-list .dd-info-value:nth-child(2) {
+	border-top: none;
+}
+
+/* endregion record payment detail */

@@ -1,0 +1,376 @@
+:root {
+	--max-width-card-item: 8rem;
+	--top-companies-line: 0%;
+}
+
+/* region hero section */
+.hero-section {
+	padding-top: 4rem;
+}
+.hero-section-content {
+	text-align: center;
+	margin-block: 7rem 5rem;
+}
+.top-companies-img {
+	position: relative;
+}
+.top-companies-img::before,
+.top-companies-img::after {
+	content: "";
+	position: absolute;
+	background-color: var(--color-border-dark);
+	width: var(--top-companies-line);
+	height: 2px;
+	top: 50%;
+	border-radius: 7px;
+	opacity: .5;
+}
+.top-companies-img::before {
+	right: 0;
+}
+.top-companies-img::after {
+	left: 0;
+}
+
+@media only screen and (min-width: 724px){
+	:root {
+		--top-companies-line: 10%;
+	}
+}
+@media only screen and (min-width: 768px){
+	:root {
+		--top-companies-line: 15%;
+	}
+}
+@media only screen and (min-width: 992px){
+	:root {
+		--top-companies-line: 20%;
+	}
+}
+@media only screen and (min-width: 1200px){
+	:root {
+		--top-companies-line: 25%;
+	}
+}
+@media only screen and (min-width: 1400px){
+	:root {
+		--top-companies-line: 28%;
+	}
+}
+
+/* endregion hero section */
+
+/* region participants*/
+
+.participating-items {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.participating-items {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.participating-items {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.participating-item {
+	border: 1px solid var(--color-anchor-200);
+	padding: 10px 15px;
+	column-gap: 20px;
+	border-radius: 7px;
+	height: 140px;
+	overflow: hidden;
+	transition: border-color 0.2s ease-in-out;
+	position: relative;
+}
+
+.participating-plan-badge{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 25px;
+}
+
+.participating-item:hover{
+	border-color: var(--color-anchor-300);
+}
+
+.participating-img > img {
+	max-width: 93px;
+	max-height: 95px;
+}
+
+.participating-detail {
+	
+}
+
+.participating-title {
+	margin-bottom: 5px;
+}
+
+.participating-title,
+.participating-subtitle {
+	-webkit-line-clamp: 2;
+}
+
+.participating-location {
+	margin-top: 5px;
+}
+
+/* endregion participants*/
+
+/* region company card */
+
+.products{
+	margin-top: 5rem;
+}
+
+.product-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product-card {
+	max-width: var(--max-width-card-item);
+	width: 100%;
+	padding: .5rem;
+	border-bottom: 1px solid var(--color-anchor-200);
+	position: relative;
+}
+
+.product-card-plan-img {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 30px;
+}
+
+@media (min-width: 340px)  {
+	:root {
+		--max-width-card-item: 9rem;
+	}
+	.product-card{
+		padding: .8rem;
+	}
+}
+
+@media (min-width: 400px) {
+	:root {
+		--max-width-card-item: 10rem;
+	}
+
+	.product-card {
+		padding: 1rem;
+	}
+}
+
+@media (min-width: 500px) {
+	:root {
+		--max-width-card-item: 13rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	:root {
+		--max-width-card-item: 14rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.product-card {
+		padding: 1.5rem;
+	}
+}
+
+@media (max-width: 280px) {
+
+	.product-cards .product-card:last-child {
+		border-bottom: none;
+	}
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+
+	.product-cards .product-card:nth-of-type(2n+1) {
+		border-inline-end: 1px solid var(--color-anchor-200);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+	.product-cards .product-card:nth-of-type(3n+2) {
+		border-inline: 1px solid var(--color-anchor-200);
+	}
+
+	.product-cards .product-card:last-child {
+		border-inline-end: none;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.product-cards .product-card:nth-of-type(4n+2) {
+		border-inline: 1px solid var(--color-anchor-200);
+	}
+
+	.product-cards .product-card:nth-of-type(4n+3) {
+		border-inline-end: 1px solid var(--color-anchor-200);
+	}
+
+	.product-cards .product-card:last-child {
+		border-inline-end: none;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.product-cards .product-card {
+		border-inline-end: 1px solid var(--color-anchor-200);
+	}
+
+	.product-cards .product-card:nth-of-type(5n+5) {
+		border-inline-end: none;
+	}
+
+	.product-cards .product-card:last-child {
+		border-inline-end: none;
+	}
+}
+
+.product-card-title {
+	-webkit-line-clamp: 2;
+	
+}
+
+.product-card-title,
+.product-card-company{
+	text-align: center;
+}
+
+.product-card-img {
+	border-radius: 7px;
+}
+
+/* endregion */
+
+/*  region supplier panel banner */
+
+.supplier-panel-banner__btn--register {
+	background-color: var(--secondary-color);
+	text-align: center;
+	color: var(
+		--color-white);
+	position: relative;
+	margin-top: 6rem;
+	max-width: 16rem;
+}
+.supplier-panel-banner__btn--register:hover {
+	background-color: var(--secondary-color-dark);
+}
+.supplier-panel-banner__btn-icon {
+	width: 7rem;
+	position: absolute;
+	top: -2rem;
+	left: -1rem;
+	z-index: -1;
+}
+
+.supplier-panel-banner {
+	margin-top: 6rem;
+}
+.supplier-panel-banner__background {
+}
+.supplier-panel-banner__wrapper {
+	padding: 5rem 1rem;
+	padding-bottom: 9rem;
+	background-image: url(./img/supplier-landing-banner.svg);
+	background-repeat: no-repeat;
+	color: var(--color-white);
+	position: relative;
+}
+.supplier-panel-banner__title {
+	position: relative;
+	z-index: 10;
+	transform: rotate(4deg);
+	margin: 0;
+}
+.supplier-panel-banner__title-icon {
+	position: absolute;
+	right: 0;
+	transform: rotate(-4deg);
+	z-index: -1;
+	top: 0;
+	width: 18.7rem;
+}
+.supplier-panel-banner__title-arrow-icon {
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.supplier-panel-banner__caption {
+	padding-top: 2rem;
+	/*font-size: 1.45rem;*/
+	line-height: 2;
+	max-width: 46rem;
+	text-align: center;
+}
+.supplier-panel-banner__btn--register {
+	/* margin-top: 5rem; */
+	/* max-width: 15rem; */
+	padding: 1.2rem 2.2rem;
+}
+.supplier-panel-banner__links {
+	position: absolute;
+	bottom: 0.5rem;
+	z-index: 10;
+}
+
+@media only screen and (max-width: 992px) {
+	/*  ============ tiny supplier panel banner section ============ */
+
+	.supplier-panel-banner {
+		margin-top: 4rem;
+		background-repeat: no-repeat;
+		background-image: url(./img/supplier-landing-banner-mobile.svg);
+		/* width: 105%; */
+	}
+	.supplier-panel-banner__background {
+	}
+	.supplier-panel-banner__wrapper {
+		padding: 1.5rem 1rem;
+		padding-bottom: 6rem;
+		background-image: unset;
+		color: var(--color-white);
+		position: relative;
+	}
+	.supplier-panel-banner__caption {
+		/*font-size: 1.2rem;*/
+	}
+	.supplier-panel-banner__title {
+		transform: rotate(4deg);
+		font-size: 1.45rem;
+	}
+	.supplier-panel-banner__title-icon {
+		width: 14.5rem;
+		transform: rotate(-2deg);
+	}
+	.supplier-panel-banner__title-arrow-icon {
+		width: 4rem;
+		height: 4rem;
+	}
+	.supplier-panel-banner__links{
+		bottom: -2rem;
+	}
+}
+
+/*  endregion supplier panel banner */
+
+

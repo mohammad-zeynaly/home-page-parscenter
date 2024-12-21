@@ -1,0 +1,13 @@
+.special-member::after {
+	left: 0px;
+	right: auto;
+}
+
+.product-info-section-title::before {
+	right: 0;
+}
+
+.company-product-card::before {
+	left: 0;
+	right: auto;
+}

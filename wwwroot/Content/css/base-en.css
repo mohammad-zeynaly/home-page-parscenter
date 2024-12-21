@@ -1,0 +1,10 @@
+﻿body {
+	font-family: Vazirmatn, Arial, Helvetica, sans-serif; 
+}
+h1, h2, h3, h4, h5, legend, .nav-search label, .nav-tabs li a, .business-owner-ref {
+    font-family: 'Open Sans', serif;
+    font-weight: normal;
+}
+h5 {
+    font-weight: bold;
+}

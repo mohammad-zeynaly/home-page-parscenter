@@ -1,0 +1,39 @@
+@font-face {
+    font-family: IRANYekan;
+    src: url('../fonts/IRANYekanWebBold.eot') format('eot');
+    src: url('../fonts/iranyekanwebbold.svg') format('svg');
+    src: url('../fonts/IRANYekanWebBold.ttf') format('ttf');
+    src: url('../fonts/IRANYekanWebBold.woff') format('woff');
+    src: url('../fonts/IRANYekanWebBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: IRANYekan;
+    src: url('../fonts/IRANYekanWebExtraBold.eot') format('eot');
+    src: url('../fonts/iranyekanwebextrabold.svg') format('svg');
+    src: url('../fonts/IRANYekanWebExtraBold.ttf') format('ttf');
+    src: url('../fonts/IRANYekanWebExtraBold.woff') format('woff');
+    src: url('../fonts/IRANYekanWebExtraBold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: IRANYekan;
+    src: url('../fonts/IRANYekanWebRegular.eot') format('eot');
+    src: url('../fonts/IRANYekanWebRegular.svg') format('svg');
+    src: url('../fonts/IRANYekanWebRegular.ttf') format('ttf');
+    src: url('../fonts/IRANYekanWebRegular.woff') format('woff');
+    src: url('../fonts/IRANYekanWebRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    font-family: IRANYekan, Tahoma, Helvetica, sans-serif;
+}

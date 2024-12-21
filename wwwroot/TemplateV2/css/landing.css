@@ -1,0 +1,512 @@
+/* ============ local variables  ============ */
+:root {
+	/*refactor the names*/
+	--primary-color: #20315f;
+	--primary-color-dark: #162349;
+	--secondary-color: #f45050;
+	--secondary-color-dark: #ee2939;
+	--color-primary-500: #f45050;
+	--color-primary-700: #ee2939;
+}
+/* ============ css reset  ============ */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: IRANYekan;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  all: unset;
+}
+body {
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  border: none;
+  outline: none;
+}
+/* ============ components  ============ */
+.secondary-color-btn {
+	color: var(--secondary-color) !important;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.btn-lg {
+  padding: 1.1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.btn-primary {
+	border-radius: 0.4rem;
+	background-color: var(--secondary-color);
+	color: var(--color-white);
+	position: relative;
+	transition: all 150ms ease-in;
+}
+.btn-primary:hover {
+	background-color: #ee2939;
+}
+.relative {
+  position: relative;
+}
+.section-header {
+  position: relative;
+  margin: 0 auto;
+}
+.section-header__icon {
+  position: absolute;
+  top: -0.5rem;
+  opacity: 0.5;
+}
+.section-header__title {
+  color: var(--primary-color);
+  padding-right: 2.75rem;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.section-header__arrow {
+  transform: translateY(-1.8rem);
+}
+.section-header__caption {
+  transform: translateY(1.5rem);
+  color: var(--secondary-color);
+  font-weight: 900;
+  text-align: left;
+  font-size: 1.35rem;
+}
+/* ============ customize glide  ============ */
+.glide__bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  border: none;
+  background-color: #dddddd;
+}
+.glide__bullet--active {
+  background-color: var(--primary-color);
+}
+.glide__arrow {
+  cursor: pointer;
+}
+.glide-slider__arrow {
+  background-color: var(--secondary-color);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in;
+}
+
+/* ============ section header  ============  */
+.header-shape__icon {
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  left: 0;
+  z-index: -1;
+}
+.header-shape__arrow {
+  position: absolute;
+  top: -3rem;
+  transform: rotate(-60deg);
+  left: 7rem;
+}
+.header {
+  padding: 1.5rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: all 175ms ease-in;
+  z-index: 50;
+}
+.header__fixed {
+  background-color: var(--color-white);
+  padding: 1rem 0;
+}
+.menu__item {
+  margin-left: 3rem;
+  text-align: center;
+}
+.brand__link {
+  margin-left: 3rem;
+}
+.menu__link {
+  color: var(--primary-color);
+  transition: all 175ms ease-in;
+}
+.menu__link:hover {
+  color: var(--secondary-color);
+}
+.login__btn {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  font-weight: 100;
+}
+.btn-dropdown {
+	background-color: var(--primary-color);
+	color: var(--color-white);
+	font-weight: 100;
+	border: none;
+	padding: 0.8rem 1.2rem;
+	border-radius: 7px;
+}
+.btn-dropdown:hover {
+	background-color: var(--primary-color-dark);
+	color: var(--color-white);
+}
+.company-icon-register-or-login {
+	display: none;
+}
+@media (max-width: 1050px) {
+	.company-text-register-or-login {
+		display: none;
+	}
+
+	.company-icon-register-or-login {
+		display: inherit;
+	}
+}
+/* ============ section common questions  ============ */
+.common-questions {
+	margin-top: 3rem;
+	transform: translateY(-1.5rem);
+}
+.common-questions__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding-right: 1.9rem;
+}
+.common-questions-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.common-questions-item {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 0px 0px #00000004, 0px 3px 20px 0px #00000008;
+  padding: 1rem;
+  border-radius: 7px;
+}
+.common-questions-item--active {
+  opacity: 1;
+  display: block;
+}
+.common-questions-item--active .common-questions-item__title {
+  color: var(--secondary-color);
+}
+.common-questions-item--active .common-questions-item__icon {
+  transform: rotate(90deg);
+}
+.common-questions-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.common-questions-item__header--active .common-questions-item__title {
+  color: var(--secondary-color);
+}
+.common-questions-item__header--active svg {
+  transform: rotate(180deg);
+  fill: var(--secondary-color);
+}
+.common-questions-item__title {
+  font-size: 1.25rem;
+  color: #737373;
+  font-weight: 100;
+  padding: 1rem 0;
+}
+.common-questions-item__body {
+  display: none;
+  opacity: 0;
+  padding-top: 1rem;
+  color: #737373;
+  border-top: 0.2px solid var(--color-anchor-200);
+}
+.common-questions-item__body--active {
+  display: block;
+  opacity: 1;
+}
+.common-questions-icons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.common-questions-icons__arrow {
+  transform: rotate(-85deg);
+  width: 6rem;
+}
+
+
+@media only screen and (max-width: 1280px) {
+	.header-shape {
+		left: -0.5rem;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.header-shape {
+		left: 0;
+	}
+	/* ============ responsive section header (component) ============ */
+	.section-header__arrow {
+		display: none;
+	}
+
+	.section-header__title {
+		padding-right: 0;
+	}
+	.menu__item {
+		margin-left: 2rem;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.header .container {
+		max-width: 100%;
+	}
+	.brand__link {
+		margin-left: 1rem;
+	}
+}
+@media only screen and (max-width: 992px) {
+  /* ============ responsive glide ============ */
+  .glide__bullet {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+  /* ============ responsive section header (component)  ============ */
+  .section-header {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .section-header__icon {
+    display: none;
+  }
+  .section-header__title {
+    padding-right: 0;
+    text-align: center;
+    font-size: 1.25rem;
+    transform: translateY(0);
+    font-weight: 900;
+  }
+  .section-header__caption {
+    text-align: center;
+    padding-top: 1.2rem;
+    transform: translateY(0);
+    font-size: 1.2rem;
+  }
+  /* ============ responsive header shape section  ============ */
+  .header-shape {
+    left: 0;
+  }
+  /* ============ responsive header section  ============ */
+  .menu__item {
+    margin-left: 2rem;
+  }
+	/* ============ responsive common questions section  ============ */
+	.common-questions__title {
+		margin-bottom: 0.75rem;
+	}
+	.common-questions-icons {
+		margin: 1rem 0;
+	}
+	.common-questions-icons__arrow {
+		width: 5rem;
+	}
+	.trusting-us-bullets {
+		padding-bottom: 1.25rem;
+	}
+	.common-questions-item__title {
+		font-size: 1.1rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+   /* ============ responsive header  section  ============ */
+  .header__fixed {
+    padding: 0.7rem 0;
+  }
+  .nav {
+    flex-direction: row-reverse;
+    align-items: center !important;
+  }
+  .login__btn,
+  .menu {
+    display: none !important;
+  }
+  .menu__btn {
+    display: flex !important;
+    align-items: center;
+    cursor: pointer;
+    height: 1.5rem;
+  }
+  .menu__btn svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .brand__link {
+    margin: 0;
+  }
+  .brand__logo {
+    width: 8.5rem;
+    transform: translateY(5px);
+  }
+    /* ============ responsive section common questions (faq)  ============ */
+  .common-questions__title {
+    text-align: center;
+  }
+  .common-questions-item__title {
+    font-size: 1.15rem;
+  }
+  .ticket__wrapper {
+    padding: 3rem 1.5rem;
+  }
+  .ticket-input-wrapper,
+  .ticket-input-wrapper__input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* ============ responsive section header (component)  ============ */
+  .section-header___title {
+    padding-right: 0;
+    text-align: center;
+  }
+  .section-header__title,
+  .section-header__caption {
+    font-size: 1.05rem;
+  }
+  /* ============ responsive glide  ============ */
+  .glide__bullet {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+  /* ============ responsive section common questions (faq)  ============ */
+  .common-questions__title {
+    font-size: 1.4rem;
+  }
+  .common-questions-item__title {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* ============ responsive btn component  ============ */
+  .btn-lg {
+    padding: 0.8rem 1.1rem !important;
+  }
+  /* ============ responsive section header (component)  ============ */
+  .section-header__title {
+    font-size: 1.1rem;
+  }
+  .section-header__caption {
+    font-size: 1rem;
+  }
+}
+
+/* region ================ RayChat ==================*/
+
+.loader-border {
+	height: 2rem;
+	width: 2rem;
+}
+
+.loader {
+	width: 2rem;
+	height: 2rem;
+	border: 2px solid #FFF;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.rayChat-button {
+	transition: transform 250ms cubic-bezier(0.33, 0, 0, 1) 0s;
+	overflow: hidden !important;
+	display: flex;
+	width: 55px !important;
+	height: 55px !important;
+	background-color: #e43725 !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	border-radius: 16px !important;
+	box-shadow: none !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.rayChat-button:hover {
+	transition: transform 250ms cubic-bezier(0.33, 0, 0, 1) 0s;
+	transform: scale(1.1);
+}
+
+.rayChat-button-container {
+	transition: opacity 250ms ease 0s;
+	width: 100px !important;
+	height: 100px !important;
+	position: fixed !important;
+	z-index: 2147483647 !important;
+	border-radius: 16px !important;
+	display: flex;
+	opacity: 1 !important;
+	visibility: visible !important;
+	bottom: 50px;
+	left: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.rayChat-icon {
+	width: 40px;
+	height: 40px;
+	margin: auto !important;
+	cursor: pointer !important;
+	background-image: url(img/ray_chat.svg) !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	background-position: center center !important;
+}
+
+
+.raychat_frame {
+	bottom: 50px;
+}
+
+/* endregion */
+
+
+.home-slide .carousel-indicators {
+	right: auto;
+	margin-right: 0;
+	margin-left: 0;
+	left: 48%;
+	bottom: -9px;
+	width: auto;
+}

@@ -1,0 +1,111 @@
+.btn-collapse {
+	font-size: 0.8rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .2), #fff);
+}
+
+.btn-collapse::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: var(--color-anchor-200);
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+[data-collapse-box] {
+	position: relative;
+	overflow: hidden;
+	transition: 1s;
+}
+
+[data-collapse-target] {
+	border: 1px solid var(--color-anchor-200);
+	border-radius: 20px;
+	padding: 8px;
+	background-color: var(--color-white);
+	color: var(--color-secondary-500);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+}
+
+[data-collapse-target]::before {
+	content: attr(data-collapsed);
+}
+
+[data-collapse-box].collapsed [data-collapse-target]::before {
+	content: attr(data-expand);
+}
+
+
+/* #region list plus collapse */
+
+.list-plus-collapse {
+	margin-inline-start: 1rem;
+}
+
+.list-plus-collapse > li ul {
+	display: none;
+}
+
+.list-plus-collapse li {
+	list-style: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.list-plus-collapse li:not(:last-child){
+	margin-bottom: 16px;
+}
+
+.list-plus-collapse li  ul{
+	margin-inline-start: 10px;
+	margin-top: 15px;
+}
+
+.list-plus-collapse li > a:not([data-toggle-sub-item]):before {
+	content: '';
+	display: block;
+	width: 5px;
+	height: 5px;
+	border-radius: 30px;
+	background-color: var(--primary);
+	position: absolute;
+	right: -16px;
+	top: 9px;
+}
+
+.list-plus-collapse li > a[data-toggle-sub-item]:before, .list-plus-collapse li > a[data-toggle-sub-item]:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 2px;
+    background-color: var(--primary);
+    position: absolute;
+    right: -18px;
+    top: 11px;
+	transition: transform .5s ease-in-out;
+}
+
+.list-plus-collapse li > a[data-toggle-sub-item]:after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.list-plus-collapse li > a[data-toggle-sub-item="true"]:after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+/* #endregion */

@@ -1,0 +1,55 @@
+.border-hover-secondary:hover {
+	border-color: var(--color-secondary-500) !important;
+}
+
+.gap-1 {
+	gap: 0.25rem !important;
+}
+
+.gap-2 {
+	gap: 0.5rem !important;
+}
+
+.gap-3 {
+	gap: 1rem !important;
+}
+
+.gap-4 {
+	gap: 1.5rem !important;
+}
+
+.gap-5 {
+	gap: 3rem !important;
+}
+
+.gap-6 {
+	gap: 4rem !important;
+}
+
+.center-with-flex {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important; 
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+/* region li bullet */
+.ul-bullet li {
+	position: relative;
+	padding-inline: 1rem;
+	line-height: 1.8;
+}
+.ul-bullet li:before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 7px;
+	background-color: var(--color-primary-500);
+	position: absolute;
+	top: 40%;
+	right: 0;
+}
+/* endregion */

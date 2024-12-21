@@ -1,0 +1,126 @@
+.release-notes {
+	max-width: 800px;
+	margin-inline: 2rem;
+}
+
+.release-notes-cl {
+	border-radius: 7px;
+}
+
+[class^="change-log-badge-"] {
+	border-radius: 60px;
+	padding: 0.2rem 0.6rem;
+}
+
+[class^="change-log-badge-"] #image {
+	width: 16px;
+	height: 16px;
+	background-position: center;
+	background-size: cover;
+}
+
+.change-log-badge-Feature #image {
+	background-image: url("./img/change-type-feature.png");
+}
+.change-log-badge-FixBug #image {
+	background-image: url("./img/change-type-fixbug.png");
+}
+.change-log-badge-Improvement #image {
+	background-image: url("./img/change-type-improvement.png");
+}
+
+.change-log-badge-Announcements #image {
+	background-image: url("./img/change-type-announcements.png");
+}
+
+[class^="change-log-badge-"] span {
+	font-weight: 900;
+	font-size: 0.8rem;
+	padding-inline-start: 5px;
+}
+
+.change-log-badge-Feature {
+	background-color: #CFFBE1;
+	color: #347F49;
+}
+.change-log-badge-FixBug {
+	background-color: #FEDAD9;
+	color: #9B3237;
+}
+.change-log-badge-Improvement {
+	background-color: #D5DBFD;
+	color: #433AA5;
+}
+.change-log-badge-Announcements {
+	background-color: #C3E2FC;
+	color: #2289DB;
+}
+
+.change-log-badge-premium #image {
+	background-image: url("./img/change-log-only-premium.png");
+}
+
+.change-log-badge-premium {
+	background-color: #FFE7C1;
+	color: #E59718;
+}
+
+#change-log-reactions div {
+	position: relative;
+}
+
+#change-log-reactions div:hover {
+	cursor: pointer;
+}
+
+#change-log-reactions div:hover:before {
+	content: " ";
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: -8px;
+	top: -7px;
+	opacity: 1.4;
+	background-color: var(--color-border-light);
+	border-radius: 100px;
+	z-index: -2;
+}
+
+#change-log-reactions div:active:before {
+	background-color: var(--color-border-dark);
+	transition: background-color .2s ease-in-out;
+}
+
+
+.add-release-comment {
+	padding: 1.5rem 2rem 2rem;
+}
+
+
+.add-release-comment input {
+	background-color: var(--color-border-light) !important;
+	border: none !important;
+	width: -webkit-fill-available !important;
+	height: 3.2rem !important;
+	font-size: 0.9rem;
+	border-radius: 4px;
+	padding-inline: 1rem;
+}
+
+.add-release-comment input:not(:first-child) {
+	height: 70px !important;
+}
+
+.add-release-comment input::placeholder {
+	/* Most modern browsers support this now. */
+	color: #a2a2a2;
+}
+
+.add-release-comment a {
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 5rem;
+	cursor: pointer;
+}

@@ -1,0 +1,31 @@
+/* #region footer */
+.product-info-section-title::before {
+	right: 0;
+}
+
+
+.footer-category-links {
+    border-right: dashed 1px #fff;
+    border-left: none;
+}
+
+.footer-category-links a {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.footer-category-links a:before {
+    right: 21px;
+}
+
+/* #endregion*/
+
+@media (min-width: 768px) {
+    .withSlash {
+        margin-right: 1.5rem !important;
+    }
+
+    .withSlash>li:nth-child(1) {
+        margin-right: 1.5rem !important;
+    }
+}

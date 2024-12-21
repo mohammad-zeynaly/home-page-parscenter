@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.746" height="73.128" viewBox="0 0 59.746 73.128">
+  <g id="plan-targe" transform="translate(-20.76 -12.876)">
+    <g id="Layer_1" data-name="Layer 1">
+      <path id="Path_3824" data-name="Path 3824" d="M21.36,49.69v9a26.53,26.53,0,1,0,53.06,0V48.1" fill="#bc175a"/>
+      <circle id="Ellipse_121" data-name="Ellipse 121" cx="26.53" cy="26.53" r="26.53" transform="translate(21.51 21.57)" fill="#f0457d"/>
+      <circle id="Ellipse_122" data-name="Ellipse 122" cx="16.03" cy="16.03" r="16.03" transform="translate(32.01 32.07)" fill="#fff"/>
+      <circle id="Ellipse_123" data-name="Ellipse 123" cx="6.41" cy="6.41" r="6.41" transform="translate(41.63 41.69)" fill="#f0457d"/>
+      <path id="Path_3825" data-name="Path 3825" d="M71.43,22.18l-1.32-7.7L59.65,26.23l1.65,7.33Z" fill="#ffd44d"/>
+      <path id="Path_3826" data-name="Path 3826" d="M71.33,22.48l7.8.41L68.67,34.64l-7.47-.78Z" fill="#ffd44d"/>
+    </g>
+    <g id="Layer_2" data-name="Layer 2">
+      <path id="Path_3827" data-name="Path 3827" d="M71.93,36.57a26.46,26.46,0,1,1-14.7-13.36" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <circle id="Ellipse_124" data-name="Ellipse 124" cx="16.03" cy="16.03" r="16.03" transform="translate(32.01 32.07)" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <circle id="Ellipse_125" data-name="Ellipse 125" cx="6.41" cy="6.41" r="6.41" transform="translate(41.63 41.69)" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_3828" data-name="Path 3828" d="M71.21,22.25l-1.32-7.71L59.43,26.3l1.65,7.33Z" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_3829" data-name="Path 3829" d="M71.11,22.54l7.8.42L68.45,34.71l-7.47-.79Z" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Line_153" data-name="Line 153" x1="23.4" y2="26.13" transform="translate(47.89 22.4)" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_3830" data-name="Path 3830" d="M66.62,77.65a26.49,26.49,0,0,0,7.95-18.94V48.1" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_3831" data-name="Path 3831" d="M21.51,49.69v9A26.54,26.54,0,0,0,61,81.88" fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

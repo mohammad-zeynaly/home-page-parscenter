@@ -1,0 +1,170 @@
+:root {
+  --color-app-background: #f2f2f2;
+  --color-transparent: transparent;
+  --color-neutral-100: #f0f0f1;
+  --color-neutral-200: #e0e0e2;
+  --color-neutral-300: #c0c2c5;
+  --color-neutral-400: #a1a3a8;
+  --color-neutral-500: #81858b;
+  --color-neutral-600: #62666d;
+  --color-neutral-700: #3f4064;
+  --color-neutral-800: #484848;
+  --color-neutral-900: #0c0c0c;
+  --color-neutral-000: #fff;
+  --color-dark-neutral-100: #323641;
+  --color-dark-neutral-200: #424650;
+  --color-dark-neutral-300: #525660;
+  --color-dark-neutral-400: #646770;
+  --color-dark-neutral-500: #767981;
+  --color-dark-neutral-600: #94969c;
+  --color-dark-neutral-700: #c2c3c7;
+  --color-dark-neutral-800: #fff;
+  --color-dark-neutral-900: #fff;
+  --color-dark-neutral-000: #222732;
+  --color-dark-brand-primary: var(--color-primary-700);
+  --color-dark-app-background: #0a101b;
+  --color-white: #fff;
+  --color-black: #0c0c0c;
+  --color-primary-300: #fe0d0d;
+  --color-primary-500: #db0101;
+  --color-primary-700: #ad0101;
+  --color-secondary-100: #80faff;
+  --color-secondary-300: #00d4dc;
+  --color-secondary-500: #00a7ae;
+  --color-secondary-700: #009197;
+  --color-anchor-100: #f8f8f8;
+  --color-anchor-200: #f3f3f3;
+  --color-anchor-300: #dfdfdf;
+  --color-border-light: var(--color-anchor-200);
+  --color-border-dark: var(--color-anchor-300);
+  --color-hint-object-neutral: #81858b;
+  --color-hint-object-error: #d32f2f;
+  --color-hint-object-success: #4caf50;
+  --color-hint-object-caution: #f9a825;
+  --color-hint-text-neutral: #62666d;
+  --color-hint-text-error: #b2001a;
+  --color-hint-text-success: #2e7b32;
+  --color-hint-text-caution: #f57f17;
+  --color-button-primary: var(--color-primary-500);
+  --color-button-secondary: #19bfd3;
+  --color-button-white: #fff;
+  --color-button-black: #0c0c0c;
+  --color-button-disable: #e0e0e2;
+  --color-button-text-primary: #fff;
+  --color-button-text-secondary: #fff;
+  --color-button-text-white: #0c0c0c;
+  --color-button-text-black: #fff;
+  --color-icon-primary: var(--color-primary-500);
+  --color-icon-secondary: #19bfd3;
+  --color-icon-white: #fff;
+  --color-icon-black: #0c0c0c;
+  --color-icon-disable: #e0e0e2;
+  --color-icon-low-emphasis: #a1a3a8;
+  --color-icon-high-emphasis: #424750;
+  --color-icon-success: #4caf50;
+  --color-icon-warning: #f9a825;
+  --color-icon-neutral-hint: #81858b;
+  --color-icon-rating-0-2: #f9bc00;
+  --color-icon-rating-2-3: #b1b64d;
+  --color-icon-rating-3-4: #65aa57;
+  --color-icon-rating-4-5: #00a049;
+  --color-icon-error: #d32f2f;
+  --color-background-body: #fcfcfc;
+  --color-silver: #81858b;
+  --color-gold: #c49a26;
+  --color-diamond: #77b3ec;
+  --color-black-neutral-700: #404040;
+  --landing-secondary-color: #20315f;
+  --supplier-primary-500: #f45050;
+}
+
+.color-neutral-500 {
+  color: var(--color-neutral-500) !important;
+}
+
+.color-neutral-700 {
+  color: var(--color-neutral-700) !important;
+}
+.color-black-neutral-700 {
+  color: var(--color-black-neutral-700) !important;
+}
+.color-landing-secondary-color {
+  color: var(--landing-secondary-color) !important;
+}
+.color-neutral-800 {
+  color: var(--color-neutral-800) !important;
+}
+
+.color-neutral-900 {
+  color: var(--color-neutral-900) !important;
+}
+
+.color-secondary-500 {
+  color: var(--color-secondary-500) !important;
+}
+
+.color-primary-500 {
+  color: var(--color-primary-500) !important;
+}
+
+.color-text-error {
+  color: var(--color-hint-text-error) !important;
+}
+
+.color-icon-neutral-hint {
+  color: var(--color-icon-neutral-hint) !important;
+}
+
+/* region box-shadow*/
+.b-shadow-6 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.b-shadow-36 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.b-shadow-37 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.b-shadow-66 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.b-shadow-72 {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.b-shadow-86 {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+/* endregion box-shadow*/
+
+/* region border-color*/
+.border-1 {
+  border: 1px solid;
+}
+
+.border-2 {
+  border: 2px solid;
+}
+
+.border-color-primary {
+  border-color: var(--color-primary-500);
+}
+
+.border-color-secondary {
+  border-color: var(--color-secondary-500);
+}
+
+.border-color-neutral-500 {
+  border-color: var(--color-neutral-500);
+}
+.border-color-light {
+  border-color: var(--color-anchor-200);
+}
+/* endregion border-color*/

@@ -1,0 +1,259 @@
+main {
+    margin-bottom: 100px;
+}
+
+.field-validation-error {
+	color: var(--secondary-color);
+}
+
+.btn-neutral-500-cancel {
+	background-color: var(--color-neutral-500);
+	color: var(--color-white);
+	cursor: pointer;
+}
+
+.authentication-box {
+    padding-top: 12rem;
+    gap: 5rem;
+}
+
+@media (max-width: 991px) {
+	.authentication-box {
+		flex-direction: column;
+	}
+}
+
+.register-parscenter-text {
+    margin-bottom: 5px;
+}
+
+.authentication-content {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.authentication-content>.paper,
+.authentication-body>.paper {
+    position: relative;
+    border-radius: 15px;
+    max-width: 450px;
+}
+
+.authentication-slider {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.authentication-body {
+    margin-inline: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+	.authentication-body {
+		margin-inline: 0;
+	}
+}
+
+.authentication-step-box {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.authentication-step-line {
+    background-color: var(--color-border-light);
+    height: 1px;
+    width: 40%;
+    margin-top: 13px;
+}
+
+.authentication-step-number {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}
+
+.authentication-step--active > .authentication-step-number {
+	color: var(--color-white);
+	background-color: #347F49;
+	border-color: #347F49;
+	padding: 0.3rem;
+}
+
+.authentication-step--current > .authentication-step-number {
+	color: var(--color-white);
+	background-color: var(--primary-color);
+}
+
+.authentication-step-check {
+	font-size: 1.2rem;
+}
+
+.verification-code-input {
+	text-align: center;
+	letter-spacing: 8px;
+}
+
+.btn-send-active-code,
+.btn-confirm-code {
+	margin-bottom: 4rem;
+    width: -webkit-fill-available;
+    display: block;
+}
+
+.privacy-text {
+	letter-spacing: -0.3px;
+}
+
+
+.authentication-slider-items {
+    max-width: 400px;
+    width: 100%;
+}
+
+.authentication-slider-item>span {
+    text-align: center;
+}
+
+.glide__bullet {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 100%;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.glide__bullet--active {
+    background-color: var(--primary-color)
+}
+
+.personal-information-title {
+    position: relative;
+    padding-right: 20px;
+}
+
+.personal-information-title::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    width: 2px;
+    height: 90%;
+    right: 0;
+}
+
+.role-label {
+    padding: 15px;
+    display: block;
+}
+
+.supplier-role,
+.buyer-role {
+    flex: 1;
+    border: 1px solid #A1A3A880;
+}
+
+.role--active {
+    border-color: #00A7AE;
+    background-color: #edf9f9;
+}
+
+.role--active .role-text-icon span,
+.role--active .role-text-icon span>svg path {
+    color: #00A7AE;
+    fill: #00A7AE;
+}
+
+.supplier-role {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.buyer-role {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.supplier-option-role,
+.buyer-option-role {
+    flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	margin-top: .25rem;
+}
+
+.intro-method {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-neutral-300);
+    display: block;
+    border-radius: 11px;
+}
+
+.intro-method--active {
+    background-color: #00A7AE;
+    border-color: #057b80;
+	position: relative;
+}
+.intro-method--active::after {
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background-color: white;
+	right: 3px;
+	top: 3px;
+}
+
+.btn-register {
+    width: -webkit-fill-available;
+    display: block;
+}
+
+.advers-box {
+    max-width: 360px;
+    width: 100%;
+}
+
+.abox {
+    display: block;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 25px 20px 20px 15px;
+    margin-bottom: 7px;
+}
+
+.abox h3,
+.abox h3 a {
+    color: #CD0000;
+    font-size: 20px;
+}
+
+.abox h4,
+.abox h4 a {
+    color: #464646;
+    font-size: 1.2em;
+}
+
+.abox-tour {
+    background: linear-gradient(#EDEDED, #F9F9F9);
+}
+
+.confirm-phone-number-modal {
+	max-width: 400px !important;
+	padding-inline: 1rem;
+}
+
+.confirm-phone-number-modal .modal-dialog-close {
+	display: none;
+}
+.confirm-phone-number-modal #phone-number-review {
+	letter-spacing: 5px;
+}
+

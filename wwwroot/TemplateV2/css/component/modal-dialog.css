@@ -1,0 +1,227 @@
+/* #region modal */
+
+.modal-dialog {
+	background: #ffffff;
+	border-radius: 0.5em;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	left: 50%;
+	position: fixed;
+	top: -100%;
+	transform: translate(-50%, -50%);
+	max-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	z-index: 1020;
+	width: 100%;
+	margin: 0 !important;
+	transition: top .5s ease-in-out;
+}
+
+.modal-dialog-parent.modal-dialog-show .modal-dialog {
+	top: 50%;
+}
+
+.modal-dialog.modal-xs {
+	max-width: 370px;
+}
+
+.modal-dialog.modal-sm {
+	max-width: 576px;
+}
+
+.modal-dialog.modal-md {
+	max-width: 768px;
+}
+
+.modal-dialog.modal-lg {
+	max-width: 992px;
+}
+
+.modal-dialog.modal-fullWidth {
+	width: 100%;
+}
+
+.modal-dialog-header {
+	display: flex;
+	align-items: center;
+}
+
+.modal-dialog .modal-dialog-close {
+	align-items: center;
+	color: #111827;
+	display: flex;
+	height: 4.5em;
+	justify-content: center;
+	cursor: pointer;
+	width: 4.5em;
+	position: absolute;
+	left: 0 !important;
+	top: 0 !important;
+	z-index: 1030;
+}
+
+.modal-dialog-header div>h5 {
+	margin-bottom: 0;
+}
+
+.modal-dialog .modal-dialog-content {
+	pointer-events: all;
+	overflow: auto;
+}
+
+.modal-dialog-parent .modal-dialog-overlay {
+	pointer-events: none;
+	background: rgba(15, 23, 42, 0.8);
+	position: fixed;
+	opacity: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.modal-dialog-parent.modal-dialog-show .modal-dialog-overlay {
+	pointer-events: all;
+	opacity: 0.5;
+	z-index: 1010;
+}
+
+.modal-dialog-footer {
+	padding: 0 2rem 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.modal-dialog-footer button,
+.modal-dialog-footer button {
+	padding: 10px 25px;
+	cursor: pointer;
+}
+
+#ajax-loading {
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	background-image: linear-gradient(var(--color-secondary-500) 16px, transparent 0), linear-gradient(var(--color-primary-500) 16px, transparent 0), linear-gradient(var(--color-primary-500) 16px, transparent 0), linear-gradient(var(--color-secondary-500) 16px, transparent 0);
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-position: left top, left bottom, right top, right bottom;
+	animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		width: 64px;
+		height: 64px;
+		transform: rotate(0deg)
+	}
+
+	50% {
+		width: 30px;
+		height: 30px;
+		transform: rotate(180deg)
+	}
+
+	100% {
+		width: 64px;
+		height: 64px;
+		transform: rotate(360deg)
+	}
+}
+
+#btn-submit-loading {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: inline-block;
+	border-top: 4px solid var(--color-secondary-500);
+	border-right: 4px solid transparent;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+#btn-submit-loading::after {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border-left: 4px solid var(--color-primary-500);
+	border-bottom: 4px solid transparent;
+	animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 15px;
+  margin-top: 4px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 2px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 3px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 50px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* #endregion */
