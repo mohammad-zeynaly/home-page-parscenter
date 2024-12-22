@@ -14,6 +14,7 @@ const headerCategoryWrapper = document.querySelector(
   ".header-category-wrapper"
 );
 const headerCategoryItems = document.querySelector(".header-category-items");
+const topHeaderElem = document.querySelector(".top-header");
 const selectedDropdownItemHandler = (item) => {
   dropdownTitleElem.innerText = item;
   dropdownListsElem.classList.remove("dropdown-show");
@@ -63,6 +64,18 @@ window.addEventListener("scroll", function () {
   } else {
     headerLeftElement.classList.remove("d-none");
     headerCategoryBtn.classList.add("d-none");
+  }
+  if (window.scrollY > 70) {
+    topHeaderElem.classList.add("opacity-0");
+    topHeaderElem.classList.add("d-none");
+    console.log("window.scrollY > 50", window.scrollY);
+  } else if (
+    window.scrollY < 70
+    // topHeaderElem.className.includes("d-none")
+  ) {
+    console.log("window.scrollY < 50", window.scrollY);
+    topHeaderElem.classList.remove("opacity-0");
+    topHeaderElem.classList.remove("d-none");
   }
 });
 
